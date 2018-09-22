@@ -75,11 +75,11 @@
 </blockquote>
 <p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fviosw8n0aj20h50kh75i.jpg" alt=""></p>
 <blockquote>
-<p>输入<code>startup.bat run</code> 回车，便会提示什么问题导致闪退。</p>
+<p>输入<code>startup.bat run</code> 回车，便会提示什么问题导致闪退，根据所提示的内容重新配置环境变量。</p>
 </blockquote>
 <p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fviox6i8zqj20hx095dfr.jpg" alt=""></p>
-<h3 id="如果还是不行，手动设置JDR、JER路径"><a href="#如果还是不行，手动设置JDR、JER路径" class="headerlink" title="如果还是不行，手动设置JDR、JER路径"></a>如果还是不行，手动设置JDR、JER路径</h3><p><code>tomcat/bin/setclasspath.bat</code>  顶部添加</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_101</span><br><span class="line">set JRE_HOME=C:\Program Files\Java\jdk1.8.0_101\jre</span><br></pre></td></tr></table></figure>
+<h3 id="如果还是不行，手动设置JDR、JER路径"><a href="#如果还是不行，手动设置JDR、JER路径" class="headerlink" title="如果还是不行，手动设置JDR、JER路径"></a>如果还是不行，手动设置JDR、JER路径</h3><p><code>tomcat/bin/startup.bat</code>  顶部添加，<code>shutdown.bat</code>同理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_101</span><br><span class="line">set JRE_HOME=C:\Program Files\Java\jdk1.8.0_101\jre</span><br><span class="line">set CATALINA_HOME=C:\Users\NipGeihou\Desktop\apache-tomcat-9.0.12-windows-x64\apache-tomcat-9.0.12</span><br></pre></td></tr></table></figure>
 <p><a href="https://blog.csdn.net/cs15229216584/article/details/53910422" target="_blank" rel="noopener">参考文章1</a> <a href="https://blog.csdn.net/cyz1151148946/article/details/76691976" target="_blank" rel="noopener">参考文章2</a></p>
 
         </section>
