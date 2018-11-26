@@ -70,7 +70,19 @@
 
             
           </div>
-          <h2 id="刷新DNS缓存"><a href="#刷新DNS缓存" class="headerlink" title="刷新DNS缓存"></a>刷新DNS缓存</h2><pre><code>ipconfig /flushdns
+          <blockquote>
+<p>更新日期：2018年11月26日</p>
+</blockquote>
+<h2 id="ipconfig"><a href="#ipconfig" class="headerlink" title="ipconfig"></a>ipconfig</h2><pre><code>ipconfig /...
+    flushdns 刷新DNS缓存
+    release 手动释放ip配置
+    renew   重新获取ip配置
+</code></pre><h2 id="检测DNS解析是否正确"><a href="#检测DNS解析是否正确" class="headerlink" title="检测DNS解析是否正确"></a>检测DNS解析是否正确</h2><pre><code>nslookup
+</code></pre><h2 id="重置-Winsock-目录"><a href="#重置-Winsock-目录" class="headerlink" title="重置 Winsock 目录"></a>重置 Winsock 目录</h2><p>重新初始化网络环境，以解决由于软件冲突、病毒原因造成的参数错误问题</p>
+<pre><code>netsh winsock reset
+</code></pre><h2 id="刷新ARP缓存"><a href="#刷新ARP缓存" class="headerlink" title="刷新ARP缓存"></a>刷新ARP缓存</h2><pre><code>arp -d *
+</code></pre><h2 id="重置-TCP-IP协议"><a href="#重置-TCP-IP协议" class="headerlink" title="重置 TCP/IP协议"></a>重置 TCP/IP协议</h2><p>“resetlog.txt”文件是用来记录命令执行结果的日志文件，该参数选项必须指定</p>
+<pre><code>netsh int ip reset c:\resetlog.txt
 </code></pre>
         </section>
     </article>
@@ -82,7 +94,7 @@
     <div class="toc-container">
         <h1>目录</h1>
         <div class="content">
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#刷新DNS缓存"><span class="toc-number">1.</span> <span class="toc-text">刷新DNS缓存</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#ipconfig"><span class="toc-number">1.</span> <span class="toc-text">ipconfig</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#检测DNS解析是否正确"><span class="toc-number">2.</span> <span class="toc-text">检测DNS解析是否正确</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#重置-Winsock-目录"><span class="toc-number">3.</span> <span class="toc-text">重置 Winsock 目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#刷新ARP缓存"><span class="toc-number">4.</span> <span class="toc-text">刷新ARP缓存</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#重置-TCP-IP协议"><span class="toc-number">5.</span> <span class="toc-text">重置 TCP/IP协议</span></a></li></ol>
         </div>
     </div>
     
