@@ -1,249 +1,1565 @@
 <!DOCTYPE html>
-<html lang=>
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+
+
+
+
+
+
+
+
+
+
+
+
   
-    <link rel="icon" href="">
+
+
+<html class="theme-next muse use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.5.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.5.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.5.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.5.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.5.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.5.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
   
-    
+
+
+
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="NipGeihou Blog">
+<meta property="og:url" content="https://NipGeihou.com/index.html">
+<meta property="og:site_name" content="NipGeihou Blog">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="NipGeihou Blog">
+
+
+
+
+
+
+  <link rel="canonical" href="https://NipGeihou.com/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
   <title>NipGeihou Blog</title>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/lib/jquery.fancybox.min.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
 </head>
 
-<body>
-  <header>
-  <div class="header-container">
-    <a class='logo' href="/">
-      <span>NipGeihou Blog</span>
-    </a>
-    <ul class="right-header">
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">NipGeihou Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
       
-        <li class="nav-item">
+        
+        
+        
           
-            <a href="/" class="item-link active">首页</a>
-          
-        </li>
+          <li class="menu-item menu-item-home menu-item-active">
+
+    
+    
+    
       
-        <li class="nav-item">
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
+
+  </li>
+        
+        
+        
           
-            <a href="/about" class="item-link">关于</a>
-          
-        </li>
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
       
-        <li class="nav-item">
-          
-            <a href="/archives" class="item-link">归档</a>
-          
-        </li>
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archiv</a>
+
+  </li>
+
       
-        <li class="nav-item">
-          
-            <a href="/tags" class="item-link">标签</a>
-          
-        </li>
       
     </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://NipGeihou.com/2018/11/23/hexo_deploy/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NipGeihou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NipGeihou Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/11/23/hexo_deploy/" class="post-title-link" itemprop="https://NipGeihou.com/index.html">Hexo 部署遇到的问题与解决方法</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2018-11-23 15:12:01 / Updated at: 15:24:17" itemprop="dateCreated datePublished" datetime="2018-11-23T15:12:01+08:00">2018-11-23</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>有一段时间没有写博文，（中间Windows 10进行过更新，不知是否与此有关），今天想更新、部署<code>hexo</code>到<code>github</code>，发现我用来一键部署的批处理文件，双击打开后直接闪退，随后我在博客根目录打开<code>powershell</code>，输入<code>hexo</code>如下提示：</p>
+<p><code>hexo : 无法将“hexo”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确 ，然后再试一次。</code></p>
+<p>解决方法：<br>在系统变量<code>Path</code>中添加hexo根目录的<code>node_modules\.bin</code>，如我的：<code>D:\Blog\node_modules\.bin;</code></p>
+<p>参考文章：<a href="http://blog.codesfile.com/2018/02/28/hexo问题/" target="_blank" rel="noopener">hexo问题</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </div>
-</header>
+  
+  
+  
+  </article>
 
-  <main id='index'>
-  <div class="posts-list">
+
     
-      <section>
-        <a href="/2018/11/23/hexo_deploy/">
-          <h3 class='post-head'>
-            Hexo 部署遇到的问题与解决方法
-          </h3>
-        </a>
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://NipGeihou.com/2018/10/28/gzccc-amnoon2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NipGeihou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NipGeihou Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-        <div class="post-content">
-          
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/10/28/gzccc-amnoon2/" class="post-title-link" itemprop="https://NipGeihou.com/index.html">安朗（蓝蝴蝶）拨号客户端使用及常见网络故障问题解决办法</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2018-10-28 20:32:40" itemprop="dateCreated datePublished" datetime="2018-10-28T20:32:40+08:00">2018-10-28</time>
+            
+
             
               
-                <p>有一段时间没有写博文，（中间Windows 10进行过更新，不知是否与此有关），今天想更新、部署<code>hexo</code>到<code>github</code>，发现我用来一键部署的批处理文件，双击打开后直接闪退，随后我在博客根目录打开<code>powershell</code>，输入<code>hexo</code>如下提示：</p>
-              
-          
-        </div>
-        <div class='post-meta'>
-          <i class="fa fa-calendar" aria-hidden="true"></i> <time>2018/11/23</time>
-          
-          
-            <span class="seperator">|</span>
-             
-                <i class="fa fa-tag" aria-hidden="true"></i>
-              
-             
-  <a href="/tags/#Hexo 部署" class='tag'>Hexo 部署</a>
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2018-11-26 17:40:28" itemprop="dateModified" datetime="2018-11-26T17:40:28+08:00">2018-11-26</time>
+              
+            
+          </span>
 
           
-        </div>
-      </section>
-    
-      <section>
-        <a href="/2018/10/28/gzccc-amnoon2/">
-          <h3 class='post-head'>
-            安朗（蓝蝴蝶）拨号客户端使用及常见网络故障问题解决办法
-          </h3>
-        </a>
-        
-          <div class="post-img">
-            <img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fwo7ut5iisj20gr078weh.jpg" alt="">
-          </div>
-        
-        <div class="post-content">
+
           
             
-              
-                <blockquote>
-              
           
-        </div>
-        <div class='post-meta'>
-          <i class="fa fa-calendar" aria-hidden="true"></i> <time>2018/10/28</time>
-          
-          
-            <span class="seperator">|</span>
-             
-                <i class="fa fa-tag" aria-hidden="true"></i>
-              
-             
-  <a href="/tags/#广州城建职业学院 安朗 蓝蝴蝶" class='tag'>广州城建职业学院 安朗 蓝蝴蝶</a>
-
 
           
+          
+
+          
+
+          
+
+          
+
         </div>
-      </section>
+      </header>
     
-      <section>
-        <a href="/2018/10/15/JavaJdkDifficulties/">
-          <h3 class='post-head'>
-            JAVA JDK11+ Windows10 1809配置开发环境变量「问题心得」
-          </h3>
-        </a>
-        
-          <div class="post-img">
-            <img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw9cec55rqj20o90a6aaa.jpg" alt="">
-          </div>
-        
-        <div class="post-content">
-          
-            
-              
-                <blockquote>
-              
-          
-        </div>
-        <div class='post-meta'>
-          <i class="fa fa-calendar" aria-hidden="true"></i> <time>2018/10/15</time>
-          
-          
-            <span class="seperator">|</span>
-             
-                <i class="fa fa-tag" aria-hidden="true"></i>
-              
-             
-  <a href="/tags/#JAVA" class='tag'>JAVA</a>
 
-
-          
-        </div>
-      </section>
     
-      <section>
-        <a href="/2018/09/23/gzccc-amnoon/">
-          <h3 class='post-head'>
-            【广州城建职业学院】安朗（蓝蝴蝶）拨号客户端使用办法教程
-          </h3>
-        </a>
-        
-          <div class="post-img">
-            <img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcucqenhcj20sy0gcq4z.jpg" alt="">
-          </div>
-        
-        <div class="post-content">
-          
-            
-              
-                <blockquote>
-              
-          
-        </div>
-        <div class='post-meta'>
-          <i class="fa fa-calendar" aria-hidden="true"></i> <time>2018/09/23</time>
-          
-          
-            <span class="seperator">|</span>
-             
-                <i class="fa fa-tag" aria-hidden="true"></i>
-              
-             
-  <a href="/tags/#广州城建职业学院 安朗 蓝蝴蝶" class='tag'>广州城建职业学院 安朗 蓝蝴蝶</a>
-
-
-          
-        </div>
-      </section>
     
-      <section>
-        <a href="/2018/09/22/TomcatFlashback/">
-          <h3 class='post-head'>
-            Tomcat 捕获闪退问题
-          </h3>
-        </a>
-        
-        <div class="post-content">
-          
-            
-              
-                <blockquote>
-              
-          
-        </div>
-        <div class='post-meta'>
-          <i class="fa fa-calendar" aria-hidden="true"></i> <time>2018/09/22</time>
-          
-          
-            <span class="seperator">|</span>
-             
-                <i class="fa fa-tag" aria-hidden="true"></i>
-              
-             
-  <a href="/tags/#Tomcat Tomcat9 闪退" class='tag'>Tomcat Tomcat9 闪退</a>
-
-
-          
-        </div>
-      </section>
     
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>更新日期：2018年11月26日</p>
+</blockquote>
+<h2 id="ipconfig"><a href="#ipconfig" class="headerlink" title="ipconfig"></a>ipconfig</h2><pre><code>ipconfig /...
+    flushdns 刷新DNS缓存
+    release 手动释放ip配置
+    renew   重新获取ip配置
+</code></pre><h2 id="检测DNS解析是否正确"><a href="#检测DNS解析是否正确" class="headerlink" title="检测DNS解析是否正确"></a>检测DNS解析是否正确</h2><pre><code>nslookup
+</code></pre><h2 id="重置-Winsock-目录"><a href="#重置-Winsock-目录" class="headerlink" title="重置 Winsock 目录"></a>重置 Winsock 目录</h2><p>重新初始化网络环境，以解决由于软件冲突、病毒原因造成的参数错误问题</p>
+<pre><code>netsh winsock reset
+</code></pre><h2 id="刷新ARP缓存"><a href="#刷新ARP缓存" class="headerlink" title="刷新ARP缓存"></a>刷新ARP缓存</h2><pre><code>arp -d *
+</code></pre><h2 id="重置-TCP-IP协议"><a href="#重置-TCP-IP协议" class="headerlink" title="重置 TCP/IP协议"></a>重置 TCP/IP协议</h2><p>“resetlog.txt”文件是用来记录命令执行结果的日志文件，该参数选项必须指定</p>
+<pre><code>netsh int ip reset c:\resetlog.txt
+</code></pre>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </div>
-  <aside>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://NipGeihou.com/2018/10/15/JavaJdkDifficulties/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NipGeihou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NipGeihou Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/10/15/JavaJdkDifficulties/" class="post-title-link" itemprop="https://NipGeihou.com/index.html">JAVA JDK11+ Windows10 1809配置开发环境变量「问题心得」</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2018-10-15 23:34:22" itemprop="dateCreated datePublished" datetime="2018-10-15T23:34:22+08:00">2018-10-15</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2018-10-16 00:26:27" itemprop="dateModified" datetime="2018-10-16T00:26:27+08:00">2018-10-16</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
     
     
     
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>在以往安装JAVA JDK的时候，我必然会百度一下，如何配置环境变量，这一次跟以往一样，我在百度随便找了一篇我认为认可的<a href="https://www.runoob.com/java/java-environment-setup.html#win-install" target="_blank" rel="noopener">文章</a>，跟着配置Windows的环境变量中遇到的一些问题和我的解决方法。</p>
+</blockquote>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw9cmonghoj20ho05xglr.jpg" alt=""></p>
+<p>在文章教程中，讲到需要配置“CLASSPATH”、“Path”中的jre路径变量，但实际安装JAVA 11，JDK根目录下并不存在”jre”文件夹，查阅相关资料后得知：</p>
+<blockquote>
+<p>现在也不再单独发JRE, Server JRE这些小体积版本, 从安装后的文件中可以看到传统分离的JRE和JDK现在已经合并了, Java的编译部分已经可以看成是运行时的一部分了.`</p>
+</blockquote>
+<p>CLASSPATH也不再需要，实测确实如此，那么正确的配置方法应该是：</p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw9cvq9rusj20ro0ilta8.jpg" alt=""></p>
+<p>1.在【系统变量】-【新建】</p>
+<p>变量名：<code>JAVA_HOME</code><br>变量值：<code>D:\JDK\11</code>（以你实际安装路径为准）</p>
+<hr>
+<p>2.找到变量：Path-编辑<br>添加：<code>%JAVA_HOME%\bin</code>   （或刚刚添加 JAVA_HOME的变量值+”\bin”,比如我的<code>D:\JDK\11\bin</code>）<br>（由于我的电脑不明原因导致，<code>echo %JAVA_HOME%</code>返回并不是<code>D:\JDK\11</code>，只好通过绝对路径添加到Path）</p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw9d0exe40j20hk0iita9.jpg" alt=""></p>
+<p>至此配置完成，配置环境从原来的4个变量值减少至2个。  </p>
+<p>可以在CMD或PowerShell中输入：</p>
+<p><code>java -version</code> 显示java版本<br><code>javac</code> 运行javac时无效，需要配置JAVA_HOME环境变量<br><code>echo %JAVA_HOME%</code> 返回JAVA_HOME变量值</p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw9dft7o9tj20gl04d0sr.jpg" alt=""></p>
+<p>参考文章：<a href="https://blog.csdn.net/qq_42555979/article/details/81139937" title="Java10环境配置无jre问题" target="_blank" rel="noopener">Java10环境配置无jre问题</a></p>
+
+          
+        
+      
+    </div>
+
     
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://NipGeihou.com/2018/09/23/gzccc-amnoon/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NipGeihou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NipGeihou Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/09/23/gzccc-amnoon/" class="post-title-link" itemprop="https://NipGeihou.com/index.html">【广州城建职业学院】安朗（蓝蝴蝶）拨号客户端使用办法教程</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2018-09-23 16:22:36" itemprop="dateCreated datePublished" datetime="2018-09-23T16:22:36+08:00">2018-09-23</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2018-11-26 17:53:03" itemprop="dateModified" datetime="2018-11-26T17:53:03+08:00">2018-11-26</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>更新时间：2018年11月26日</p>
+</blockquote>
+<p><strong>师兄说：大部分的问题其实是可以自己解决的，因为师兄也是要上课的，不能做到随叫随到，为了不影响你的上网学习，强烈建议有一定动手能力的同学，先自行浏览下面的教程，尝试解决，如仍未解决，再告知师兄。</strong></p>
+<hr>
+<ul>
+<li>————↓ 正常　安装步骤 ↓————</li>
+<li><a href="#1">1.下载「安朗（蓝蝴蝶）拨号客户端</a></li>
+<li><a href="#2">2.安装「安朗（蓝蝴蝶）拨号客户端</a></li>
+<li><a href="#3">3.打开「安朗（蓝蝴蝶）拨号客户端」-拨号</a></li>
+<li>————↑ 正常　安装步骤 ↑————</li>
+<li>————↓ 疑　难　问　题 ↓————</li>
+<li><ul>
+<li><a href="#bntzrz">#1 不能出现认证网页</a></li>
+</ul>
+</li>
+<li><ul>
+<li><a href="#jygj">#2 没有解压工具</a>  </li>
+</ul>
+</li>
+<li><ul>
+<li><a href="#jywk">#3 拨号时提示“您有多于1块网卡正在使用…”</a>  </li>
+</ul>
+</li>
+<li><ul>
+<li><a href="#cs">#4 拨号时提示“服务器超时…”</a>  </li>
+</ul>
+</li>
+<li><ul>
+<li><a href="#zj">#5 拨号时提示类 终极解决办法</a></li>
+</ul>
+</li>
+<li><ul>
+<li><a href="#jc">#6 查询电脑与机房是否正常通讯</a></li>
+</ul>
+</li>
+<li><ul>
+<li><a href="https://jingyan.baidu.com/article/dca1fa6f4a517af1a44052d5.html" target="_blank" rel="noopener">#7 以太网属性“网络”选项卡空白</a></li>
+</ul>
+</li>
+<li><ul>
+<li><a href="#wifigxds">#8 WIFI共享大师软件可能安装在本机，请卸载它(其他WIFI软件同理)</a></li>
+</ul>
+</li>
+<li><ul>
+<li><a href="#cshsb">#9 蝴蝶Windows通讯端口初始化失败</a></li>
+</ul>
+</li>
+<li><ul>
+<li><a href="#fxms">#10 飞行模式无法关闭</a></li>
+</ul>
+</li>
+<li><ul>
+<li><a href="#dhcpip">#11 DHCP Client服务（位于本计算机上）错误5：拒绝访问</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="正常安装「蓝蝴蝶」步骤："><a href="#正常安装「蓝蝴蝶」步骤：" class="headerlink" title="正常安装「蓝蝴蝶」步骤："></a>正常安装「蓝蝴蝶」步骤：</h2><h3 id="1">1. 下载「安朗（蓝蝴蝶）拨号客户端」</h3>
+
+<blockquote>
+<p>正常情况下，将网线插到电脑，等待一分钟（获取ip），在浏览器随便打开一个网页（如：baidu.com），会自动重定向到下图的页面</p>
+</blockquote>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcu8kd8cxj20q70iyq4r.jpg" alt=""></p>
+<blockquote>
+<p>如没有出现此画面，请手动输入 <a href="http://www.gzccc.edu.cn/indexblue.htm" target="_blank" rel="noopener">http://www.gzccc.edu.cn/indexblue.htm</a>（务必将“indexblue.htm”也输入） 或<a href="http://2.2.2.2" target="_blank" rel="noopener">2.2.2.2</a> </p>
+</blockquote>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcucqenhcj20sy0gcq4z.jpg" alt=""></p>
+<p><strong>【更换浏览器、切换极速、兼容模式，如仍<code>不出现这网页</code>，请跳转到最下方<a href="#bntzrz">#1 不能出现认证网页</a>】</strong></p>
+<h3 id="2">2. 安装「安朗（蓝蝴蝶）拨号客户端」</h3>
+
+<blockquote>
+<p>点击“点击下载客户端（Windows版本）”——下载到一个你能找到的文件夹（目录）。</p>
+</blockquote>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcwzu453yj20b407hmxm.jpg" alt=""></p>
+<blockquote>
+<p>右击刚刚下载的文件“edu_supplicant”（也可能是“edu_supplicant.rar”）——选择“解压到edu_supplicant….”</p>
+</blockquote>
+<p><strong>【如找不到“解压到….”请跳转到<a href="##2">#2 没有解压工具</a>】</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcy23yx8kj205z03rgll.jpg" alt=""></p>
+<blockquote>
+<p><span id="jy"></span>解压（提取）到，后会出现“edu_supplicant”文件夹，双击打开  </p>
+</blockquote>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcy46ype2j207w0213yc.jpg" alt=""><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcy55ya5xj20d8052mxd.jpg" alt=""></p>
+<p><strong><code>注意！在安装前，必须把360、电脑管家、金山卫士等一切安全软件退出</code></strong><br><strong><code>注意！在安装前，必须把360、电脑管家、金山卫士等一切安全软件退出</code></strong><br><strong><code>注意！在安装前，必须把360、电脑管家、金山卫士等一切安全软件退出</code></strong>   </p>
+<blockquote>
+<p>“安朗拨号客户端20180330.EXE”（“20180330”随版本更新或不同）——右击“以管理员身份运行” </p>
+</blockquote>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcy8foic6j208e0670sr.jpg" alt=""><br><strong>确定</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcy9ki6xuj20gw0ccmzp.jpg" alt=""><br><strong>下一步</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcyb0wv8tj20f40bejrk.jpg" alt=""><br><strong>下一步</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcybwt75jj20hi0cx0sy.jpg" alt=""><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcyckooywj20n4091q3d.jpg" alt=""><br><strong>安装</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcyd8wz5lj20jg0dddg8.jpg" alt=""><br><strong>确定</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcye1z02dj20ik0e0q38.jpg" alt=""><br><strong>Next</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcyeimrj2j20gr0cnq3m.jpg" alt=""><br><strong>I Agree</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcyfcq4s7j20ht0dsmxi.jpg" alt=""><br><strong>Install</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcyg12odfj20fk0cg3yq.jpg" alt=""><br><strong>Finish</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcygoll3ej20iw0dyacg.jpg" alt=""><br><strong>完成</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcyhjg81aj209x06pdfp.jpg" alt=""><br><strong>确定（点击确定后会重启，此次重启开机时间可能比平时要久，请等待）</strong></p>
+<hr>
+<h3 id="3">3. 打开「安朗（蓝蝴蝶）拨号客户端」-拨号</h3>
+
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcyl434d0j20l30be0w7.jpg" alt=""><br><strong>安装、重启好后，双击桌面的“Auth_Supplicant”，输入<br>账户：GZCJ12345678<br>（GZCJ12345678@xxxxxxx，输入@前面的GZCJ12345678即可）<br>密码：临时账户以给你的密码为准（一般为6位数），正式账户一般为身份证后8位<br>点击“上线”，不出问题即可上网【完】</strong>  </p>
+<hr>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcz9cs3emj209v02n745.jpg" alt=""></p>
+<p><code>如不能上网，可参考“安朗认证客户端使用说明.docx”，禁用WLAN、WIFI、蓝牙网卡，卸载WIFI共享软件。</code></p>
+<p><strong>常见问题：<br><a href="#jywk">拨号时提示“您有多于1块网卡正在使用…”</a></strong><br><strong><a href="#cs">拨号时提示“服务器超时</a>”</strong><br><strong><a href="#zj">拨号时提示类 终极解决办法</a></strong></p>
+<p><br></p><h2 id="bntzrz"><font color="orange">#不能跳转到<a href="http://www.gzccc.edu.cn/indexblue.htm" target="_blank" rel="noopener">【认证页面】</a></font></h2><p></p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcv1omqk8j20ae03a0sx.jpg" alt=""><br><strong>【查看电脑右下角图标，上图为正常情况】</strong>  </p>
+<h3 id="情况一：图标是否有红叉"><a href="#情况一：图标是否有红叉" class="headerlink" title="情况一：图标是否有红叉 "></a><font color="blue">情况一：图标是否有红叉</font> <img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcv9rz1znj201h01a742.jpg" alt=""></h3><p>如果有打红叉（X），说明<strong>网线到电脑部分不通</strong> ，请将网线拔了重新插回，或换一个墙上的端口再次尝试，变成<strong>正常图标或感叹号图标</strong>后再次回到<a href="#1">原教程处</a>，按步骤继续操作。 </p>
+<p><strong>【如多次尝试仍然没有反应，依旧为红叉（X）请<code>联系网管</code>，并说明问题为“电脑右下角图标显示红叉”，有条件的可以将网线插到舍友电脑上，确认是网线问题还是电脑问题】</strong>  </p>
+<hr>
+<p><span id="jywk"></span></p>
+<h3 id="情况二：图标正常或为感叹号-同为，拨号时提示“您有多于1块网卡正在使用-”的解决办法"><a href="#情况二：图标正常或为感叹号-同为，拨号时提示“您有多于1块网卡正在使用-”的解决办法" class="headerlink" title="情况二：图标正常或为感叹号(同为，拨号时提示“您有多于1块网卡正在使用...”的解决办法)"></a><font color="blue">情况二：图标正常或为感叹号</font><strong><code>(同为，拨号时提示“您有多于1块网卡正在使用...”的解决办法)</code></strong></h3><blockquote>
+<p><strong>注意！请确认你的电脑跟机房正常连接，再进行下面的教程，不确定脑跟机房是否正常连接<a href="#jc">点击跳转</a>查看</strong>   </p>
+</blockquote>
+<p><strong>右键图标——点击打开“网络和Internet”设置</strong>  </p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcvsza54mj208s03hjrg.jpg" alt="">  </p>
+<p><strong>点击 更改适配器选项（<a href="https://jingyan.baidu.com/article/624e74597dffbd34e9ba5a67.html" target="_blank" rel="noopener">部分电脑选项在左侧上方</a>）</strong> </p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcvwx15xjj20no0i0n2b.jpg" alt="">  </p>
+<p><strong>禁用除「以太网」或「本地连接」外的所有网卡，包括但不仅限于（WLAN、WIFI、蓝牙），反正只保留一个「以太网」或「本地连接」，其余都要禁用。 <code>（“您有多于1块网卡正在使用...”问题，完成这一步后即可点击蓝蝴蝶“上线”正常上网）</code></strong>  </p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcw1nxx53j20ms08cjrv.jpg" alt="">  </p>
+<p><strong>右击「以太网」（或叫「本地连接」）——属性</strong>  </p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcw9w9j13j208907ndfz.jpg" alt="">  </p>
+<p><strong>双击“Internet协议版本4（TCP/IPv4）”</strong></p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcwbbfxn9j20c30gtt9f.jpg" alt="">  </p>
+<p><strong>选择“自动获取IP地址”和“自动获取DNS服务器地址”——确定，确定。</strong> 返回原教程处，继续按教程步骤操作<br><strong>【如按方法设置后，回到原教程处，仍不能继续，请联系网管，并说明到哪一步操作不能继续】</strong>  </p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcwdbowcoj20dx0immxv.jpg" alt="">  </p>
+<p><br></p><h2 id="jygj"><font color="orange">#没有解压工具，找不到“解压到edu_supplicant…”？</font></h2><p></p>
+<p> <strong><font color="blue">1.用手机开热点，电脑连WIFI上网。</font></strong><br>（如没有WIFI或其他原因不能在自己电脑上操作的，也可以用舍友的电脑操作、下载后用U盘复制到你的电脑上）</p>
+<p><strong>【如以上条件均不具备，请<code>联系网管</code>，并告知问题为“没有解压软件”】</strong>  </p>
+<p> <strong><font color="blue">2.用可以上网的电脑，在浏览器输入：<a href="https://www.7-zip.org/" target="_blank" rel="noopener">https://www.7-zip.org/</a> ，点击“Download”（右边为32-bit x86）</font></strong></p>
+<p>*你能确定你的Windows系统是64位的也可以选择“64-bit x64”的“Download”，当然你也可以选择360、好压之类的解压工具。 </p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcxdxkypvj20sx0gbdhx.jpg" alt=""><br><strong><font color="blue">3.找到你下载的“7z1805”或“7z1805.exe”（其中“1805”随着版本更新不同，以实际为准）——右击“以管理员身份运行”</font></strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcxjr31b3j209l04zjrh.jpg" alt=""><br><strong><font color="blue">4.出现下方页面，点击“Install”</font></strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcxnfndddj208i05vmx1.jpg" alt=""><br><strong><font color="blue">5.等待进度条满（正常几秒的事情）后，点击“Close”即可</font></strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcxohesacj208i05vjrc.jpg" alt=""><br><strong><font color="blue">6.右击刚刚不能解压的文件“edu_supplicant”（也可能是“edu_supplicant.rar”）——选择“7-Zip”——选择“提取到edu_supplicant\”</font></strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcxvkipzyj20h30jpabf.jpg" alt=""><br><strong><font color="blue">7.返回<a href="#jy">原教程处</a>，继续按教程步骤操作。</font></strong>  </p>
+<p><br></p><h2 id="cs"><font color="orange">#拨号时提示“服务器超时”</font></h2><p></p>
+<blockquote>
+<p>此问题多见于，网络配置不正确，请在浏览器输入<a href="http://2.2.2.2" target="_blank" rel="noopener">2.2.2.2</a> 或者<a href="http://www.gzccc.edu.cn/indexblue.htm" target="_blank" rel="noopener">http://www.gzccc.edu.cn/indexblue.htm</a>（务必将“indexblue.htm”也输入），如<code>不能</code>打开下图页面，请跳转至<a href="#bntzrz">#不能出现认证网页</a>按步骤尝试解决。  </p>
+</blockquote>
+<p><strong>【可以打开下图认证网页，点击“上线”时仍提示“服务器超时”，请尝试【<a href="#zj">拨号时提示类 终极解决办法</a>】，仍不能解决时请与网管联系并说明问题为“重装蓝蝴蝶和WinPcap仍不可解决”】</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcu8kd8cxj20q70iyq4r.jpg" alt=""></p>
+<p><br></p><h2 id="zj"><font color="orange">#拨号时提示类 终极解决办法</font></h2><p></p>
+<hr>
+<blockquote>
+<p><a href="http://www.gzccc.edu.cn/indexblue.htm" target="_blank" rel="noopener">认证网页</a>能打得开，就是提示“您有多于1块网卡正在使用…”、“服务器超时…”……，可能是安装安朗（蓝蝴蝶）时，最后一步，安装“WinPcap”时出错了。</p>
+</blockquote>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcyfcq4s7j20ht0dsmxi.jpg" alt=""><br> <strong>解决办法：</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0g6v9tpj207z0a7ab6.jpg" alt=""><br><strong>“此电脑”（或叫“我的电脑”、“计算机”、“此台电脑”等）右击——属性</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0iaryr5j20or0eh40d.jpg" alt=""><br><strong>点击“控制面板”</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0jj8dpmj20or0ehgn8.jpg" alt=""><br><strong>点击“卸载程序”</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0luuqvxj20or0du0ud.jpg" alt=""><br><strong>点击“安装时间”，找到“广州城建职业学院翼起来客户端”和“WinPcap 4.1.3”（4.1.3随版本更新可能不同）<br>右击“WinPcap 4.1.3”——卸载/更改</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0pmwcxmj20dz0auaae.jpg" alt=""><br><strong>Uninstall</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0qgvyi9j20dz0auq33.jpg" alt=""><br><strong>Finish</strong><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0rjvi3kj20or0dujso.jpg" alt=""><br><strong>“广州城建职业学院翼起来客户端”也是同理——卸载/更改</strong><br> <img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0tic812j20el0c8q3g.jpg" alt=""><br> <strong>选择“自动”——“下一步”</strong><br> <img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0udloevj20e20biaa7.jpg" alt=""><br> <strong>完成，手动重启，重启后按正常步骤：<a href="#1">下载「安朗（蓝蝴蝶）拨号客户端</a><br><code>【重装的蓝蝴蝶安装包必须是重新下载，如果不能访问认证页面下载，请按教程提示操作】</code></strong></p>
+<p> <br></p><h2 id="jc"><font color="orange">#检查电脑与机房连接是否正常</font></h2><p></p>
+<p><strong>桌面右下角↘ 右键图标（微信左边那个）——点击打开“网络和Internet”设置</strong>  </p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcvsza54mj208s03hjrg.jpg" alt="">  </p>
+<p><strong>点击 更改适配器选项（<a href="https://jingyan.baidu.com/article/624e74597dffbd34e9ba5a67.html" target="_blank" rel="noopener">部分旧系统电脑选项在左侧上方</a>）</strong></p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcvwx15xjj20no0i0n2b.jpg" alt="">  </p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvffoub2vtj20a606lq35.jpg" alt=""></p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvf8h51bh2j20c30g6jrv.jpg" alt="">  </p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvf8zw6lilj20c40fuaav.jpg" alt="">  </p>
+<p><strong>查看 <code>“IPv4 默认网关”</code>的右边→有没有数字（比如我这里显示：10.0.253.1）</strong>  </p>
+<p><strong><font color="blue">情况一，没有数字（为空）、或为169.x.x.x </font>：</strong> 换一个端口或拔了网线再插（电脑、墙上都要）重新点击“详细信息”查看，多次尝试后仍没有数字（为空），请联系网管并告知“不能获取IP”。  </p>
+<p><strong><font color="blue">情况二，有显示数字：10.x.x.x</font>：</strong> 电脑与机房<code>连接正常</code>，回到原教程处，按步骤继续操作。<br><br></p><h2 id="wifigxds"><font color="orange">#WIFI共享大师软件可能安装在本机，请卸载它(其他WIFI软件同理)</font></h2><p></p>
+<p> 卸载方法如下：</p>
+<p> 退出“WIFI共享大师”</p>
+<p> <img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjjjr5q4mj2061058mxa.jpg" alt=""></p>
+<p><code>右击</code>桌面的WIFI软件图标——<code>属性</code>，本教程以“WIFI共享大师”为例</p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjivntlwyj20bd04tjs5.jpg" alt=""></p>
+<p>根据“<code>起始位置</code>”的路径，找到“WIFI共享大师”的文件夹</p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjiwtr3zrj20bt0i0dgi.jpg" alt=""></p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjizommi2j20pm0kn77n.jpg" alt=""></p>
+<p>找到文件夹之后，在文件夹里找“<code>Uninstall</code>”或“<code>Uninstall.exe</code>”打开</p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjj0rfvlzj20dm09uwfc.jpg" alt=""></p>
+<p>选择“<code>继续卸载</code>”</p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjj2yz0vhj20gb0c5t93.jpg" alt=""></p>
+<p>选择“<code>残忍抛弃</code>”</p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjj3o61n5j20gb0c53yt.jpg" alt=""></p>
+<p>选择“<code>完成</code>”</p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjj48r6e1j20gb0c5dg3.jpg" alt=""></p>
+<p> 回到刚刚我们打开的<code>“WIFI共享大师”文件夹</code>，发现文件夹里还有一些文件没删除。</p>
+<p> <img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjjc6oq1yj20ns0cvmyb.jpg" alt=""></p>
+<p>点击“<code>↑</code>”或者“<code>Program Files (x86)</code>”，均可返回上一级目录</p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjjeypsgbj20ns0cv75g.jpg" alt=""></p>
+<p>然后选择“<code>WiFi共享大师</code>”文件夹，<code>右击</code>——<code>删除</code></p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjjhcj308j20ns0cvwgg.jpg" alt=""></p>
+<blockquote>
+<p>如果此时提示“<code>文件夹正在使用</code>”，请重启一遍电脑，再回来这个目录，删除。</p>
+</blockquote>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0g6v9tpj207z0a7ab6.jpg" alt="">  </p>
+<p><strong>选择“<code>此电脑</code>”（或叫“我的电脑”、“计算机”、“此台电脑”等）右击——属性</strong> </p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0iaryr5j20or0eh40d.jpg" alt="">  </p>
+<p><strong>点击“控制面板”</strong>  </p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0jj8dpmj20or0ehgn8.jpg" alt=""><br><strong>点击“卸载程序”</strong>  </p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvkfxbvuybj20or0duta2.jpg" alt=""></p>
+<p><strong>点击“卸载/更改”，就会自动卸载</strong></p>
+<p>重新打开蓝蝴蝶，点击“上线”即可。</p>
+<p><strong>建议大家不要使用WIFI软件，既违反校规，同时也可能导致电脑变慢，损坏电脑，比如这款WIFI共享大师，默认是勾选“同意空闲挖矿”。</strong></p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjikxmds2j20rp0dcgo2.jpg" alt=""></p>
+<p><br></p>
+<h2 id="cshsb"><font color="orange">#蓝蝴蝶Windows通讯端口初始化失败</font></h2>
+
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw81g5aflyj21400u0e82.jpg" alt=""></p>
+<p>右击 左下角“Windows图标”-“Windows PowerShell（管理员）”</p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw81dw2yuyj209209m3z2.jpg" alt=""></p>
+<p>在Windows PowerShell窗口输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netsh winsock reset</span><br></pre></td></tr></table></figure>
+<p>回车，重启即可</p>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw81l2cua0j20f9072747.jpg" alt=""></p>
+<h2 id="fxms"><font color="orange">#飞行模式无法关闭</font></h2><br>问题常见于笔记本电脑，请检查键盘上F1-F12键，找到一个飞机图标的按键，然后按住【Fn】+【飞机图标键】即可。（飞机图标键具体位置以实际为准）<br><br><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fwo82g6ykij20l10dadol.jpg" alt=""><br><br><br><h2 id="dhcpip"><font color="orange">#DHCP Client服务（位于本计算机上）错误5：拒绝访问)</font></h2>
+
+<p>场景：网线插到<code>别人电脑能正常获取IP</code>（即能够正常拨号，或能正常访问内网、<a href="http://2.2.2.2" target="_blank" rel="noopener">2.2.2.2</a>），而网线插在<code>故障电脑不能正常获取到IP</code>，尝试使用WLAN（无线网卡）也不能获取到IP，则考虑重启服务（DHCP Client），启动时提示：“报错DHCP CLIent服务（位于本计算机上）错误5：拒绝访问”。</p>
+<p>解决方法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dhcp </span><br><span class="line">HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip</span><br></pre></td></tr></table></figure>
+<p>在注册表编辑器中打开这两项，选择权限设置，添加 Network Service 权限并设置为“完全控制”，然后选中“用在此显示的可以应用到所有子对象的项目替代所有子对象的权限项目”复选框。</p>
+<ol>
+<li>运行：cmd; </li>
+<li>在cmd里执行 <code>net localgroup administrators localservice /add</code></li>
+<li>在cmd里执行 <code>net localgroup administrators networkservice /add</code></li>
+<li>重启Windows系统。</li>
+</ol>
+<p><a href="http://www.gscholar.cn/2014/04/dhcp-client-error5.html" target="_blank" rel="noopener">参考文章 作者：书生的学习笔记《DHCP Client服务（位于本计算机上）错误5：拒绝访问的解决方法》 </a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://NipGeihou.com/2018/09/22/TomcatFlashback/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NipGeihou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NipGeihou Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/09/22/TomcatFlashback/" class="post-title-link" itemprop="https://NipGeihou.com/index.html">Tomcat 捕获闪退问题</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
+                
+              
+
+              <time title="Post created: 2018-09-22 22:29:41" itemprop="dateCreated datePublished" datetime="2018-09-22T22:29:41+08:00">2018-09-22</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2018-10-16 02:28:38" itemprop="dateModified" datetime="2018-10-16T02:28:38+08:00">2018-10-16</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>在Tomcat的根目录下，在空白处按住Shift+右击，选择“在此处打开Powershell”（Win10以下版本为CMD），cmd、PowerShell均可。</p>
+</blockquote>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fviosw8n0aj20h50kh75i.jpg" alt=""></p>
+<blockquote>
+<p>输入<code>startup.bat run</code> 回车，便会提示什么问题导致闪退，根据所提示的内容重新配置环境变量。</p>
+</blockquote>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fviox6i8zqj20hx095dfr.jpg" alt=""></p>
+<blockquote>
+<p>在设置环境变量时，<code>JAVA_HOME</code>、<code>JRE_HOME</code>等根目录路径变量值时结尾无需添加”;”（分号）</p>
+</blockquote>
+<h3 id="如果还是不行，手动设置JDR、JER路径"><a href="#如果还是不行，手动设置JDR、JER路径" class="headerlink" title="如果还是不行，手动设置JDR、JER路径"></a>如果还是不行，手动设置JDR、JER路径</h3><p><code>tomcat/bin/startup.bat</code>  顶部添加，<code>shutdown.bat</code>同理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_101</span><br><span class="line">set JRE_HOME=C:\Program Files\Java\jdk1.8.0_101\jre</span><br><span class="line">set CATALINA_HOME=C:\Users\NipGeihou\Desktop\apache-tomcat-9.0.12-windows-x64\apache-tomcat-9.0.12</span><br></pre></td></tr></table></figure>
+<p><a href="https://blog.csdn.net/cs15229216584/article/details/53910422" target="_blank" rel="noopener">参考文章1</a> <a href="https://blog.csdn.net/cyz1151148946/article/details/76691976" target="_blank" rel="noopener">参考文章2</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">NipGeihou</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">Artikel</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">Tags</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
   </aside>
-</main>
 
 
-  <footer>
-  <div class="copyright">
-    <div>
-      &copy; 2018 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a>&nbsp
-    </div>
-    <div>
-      Theme by <a href="https://github.com/lewis-geek/hexo-theme-Aath" target="_blank">Aath</a>
-    </div>
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">NipGeihou</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.5.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
   </div>
-</footer>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.5.0"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.5.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 </body>
 </html>

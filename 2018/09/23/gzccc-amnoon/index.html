@@ -1,76 +1,469 @@
 <!DOCTYPE html>
-<html lang=>
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+
+
+
+
+
+
+
+
+
+
+
+
   
-    <link rel="icon" href="">
+
+
+<html class="theme-next muse use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.5.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.5.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.5.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.5.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.5.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.5.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
   
-    
+
+
+
+
+  <meta name="description" content="更新时间：2018年11月26日  师兄说：大部分的问题其实是可以自己解决的，因为师兄也是要上课的，不能做到随叫随到，为了不影响你的上网学习，强烈建议有一定动手能力的同学，先自行浏览下面的教程，尝试解决，如仍未解决，再告知师兄。   ————↓ 正常　安装步骤 ↓———— 1.下载「安朗（蓝蝴蝶）拨号客户端 2.安装「安朗（蓝蝴蝶）拨号客户端 3.打开「安朗（蓝蝴蝶）拨号客户端」-拨号 ————">
+<meta name="keywords" content="广州城建职业学院 安朗 蓝蝴蝶">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【广州城建职业学院】安朗（蓝蝴蝶）拨号客户端使用办法教程">
+<meta property="og:url" content="https://NipGeihou.com/2018/09/23/gzccc-amnoon/index.html">
+<meta property="og:site_name" content="NipGeihou Blog">
+<meta property="og:description" content="更新时间：2018年11月26日  师兄说：大部分的问题其实是可以自己解决的，因为师兄也是要上课的，不能做到随叫随到，为了不影响你的上网学习，强烈建议有一定动手能力的同学，先自行浏览下面的教程，尝试解决，如仍未解决，再告知师兄。   ————↓ 正常　安装步骤 ↓———— 1.下载「安朗（蓝蝴蝶）拨号客户端 2.安装「安朗（蓝蝴蝶）拨号客户端 3.打开「安朗（蓝蝴蝶）拨号客户端」-拨号 ————">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcu8kd8cxj20q70iyq4r.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcucqenhcj20sy0gcq4z.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcwzu453yj20b407hmxm.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcy23yx8kj205z03rgll.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcy46ype2j207w0213yc.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcy55ya5xj20d8052mxd.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcy8foic6j208e0670sr.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcy9ki6xuj20gw0ccmzp.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcyb0wv8tj20f40bejrk.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcybwt75jj20hi0cx0sy.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcyckooywj20n4091q3d.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcyd8wz5lj20jg0dddg8.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcye1z02dj20ik0e0q38.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcyeimrj2j20gr0cnq3m.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcyfcq4s7j20ht0dsmxi.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcyg12odfj20fk0cg3yq.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcygoll3ej20iw0dyacg.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcyhjg81aj209x06pdfp.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcyl434d0j20l30be0w7.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcz9cs3emj209v02n745.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcv1omqk8j20ae03a0sx.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcv9rz1znj201h01a742.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcvsza54mj208s03hjrg.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcvwx15xjj20no0i0n2b.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcw1nxx53j20ms08cjrv.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcw9w9j13j208907ndfz.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcwbbfxn9j20c30gtt9f.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcwdbowcoj20dx0immxv.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcxdxkypvj20sx0gbdhx.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcxjr31b3j209l04zjrh.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcxnfndddj208i05vmx1.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcxohesacj208i05vjrc.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcxvkipzyj20h30jpabf.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcu8kd8cxj20q70iyq4r.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcyfcq4s7j20ht0dsmxi.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0g6v9tpj207z0a7ab6.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0iaryr5j20or0eh40d.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0jj8dpmj20or0ehgn8.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0luuqvxj20or0du0ud.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0pmwcxmj20dz0auaae.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0qgvyi9j20dz0auq33.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0rjvi3kj20or0dujso.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0tic812j20el0c8q3g.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0udloevj20e20biaa7.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcvsza54mj208s03hjrg.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcvwx15xjj20no0i0n2b.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvffoub2vtj20a606lq35.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvf8h51bh2j20c30g6jrv.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvf8zw6lilj20c40fuaav.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjjjr5q4mj2061058mxa.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjivntlwyj20bd04tjs5.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjiwtr3zrj20bt0i0dgi.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjizommi2j20pm0kn77n.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjj0rfvlzj20dm09uwfc.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjj2yz0vhj20gb0c5t93.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjj3o61n5j20gb0c53yt.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjj48r6e1j20gb0c5dg3.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjjc6oq1yj20ns0cvmyb.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjjeypsgbj20ns0cv75g.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjjhcj308j20ns0cvwgg.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0g6v9tpj207z0a7ab6.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0iaryr5j20or0eh40d.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvd0jj8dpmj20or0ehgn8.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvkfxbvuybj20or0duta2.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvjikxmds2j20rp0dcgo2.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw81g5aflyj21400u0e82.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw81dw2yuyj209209m3z2.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw81l2cua0j20f9072747.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fwo82g6ykij20l10dadol.jpg">
+<meta property="og:updated_time" content="2018-11-26T09:53:03.027Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【广州城建职业学院】安朗（蓝蝴蝶）拨号客户端使用办法教程">
+<meta name="twitter:description" content="更新时间：2018年11月26日  师兄说：大部分的问题其实是可以自己解决的，因为师兄也是要上课的，不能做到随叫随到，为了不影响你的上网学习，强烈建议有一定动手能力的同学，先自行浏览下面的教程，尝试解决，如仍未解决，再告知师兄。   ————↓ 正常　安装步骤 ↓———— 1.下载「安朗（蓝蝴蝶）拨号客户端 2.安装「安朗（蓝蝴蝶）拨号客户端 3.打开「安朗（蓝蝴蝶）拨号客户端」-拨号 ————">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcu8kd8cxj20q70iyq4r.jpg">
+
+
+
+
+
+
+  <link rel="canonical" href="https://NipGeihou.com/2018/09/23/gzccc-amnoon/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
   <title>【广州城建职业学院】安朗（蓝蝴蝶）拨号客户端使用办法教程 | NipGeihou Blog</title>
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/lib/jquery.fancybox.min.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
 </head>
 
-<body>
-  <header>
-  <div class="header-container">
-    <a class='logo' href="/">
-      <span>NipGeihou Blog</span>
-    </a>
-    <ul class="right-header">
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">NipGeihou Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
       
-        <li class="nav-item">
+        
+        
+        
           
-            <a href="/" class="item-link">首页</a>
-          
-        </li>
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
       
-        <li class="nav-item">
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
+
+  </li>
+        
+        
+        
           
-            <a href="/about" class="item-link">关于</a>
-          
-        </li>
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
       
-        <li class="nav-item">
-          
-            <a href="/archives" class="item-link">归档</a>
-          
-        </li>
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archiv</a>
+
+  </li>
+
       
-        <li class="nav-item">
-          
-            <a href="/tags" class="item-link">标签</a>
-          
-        </li>
       
     </ul>
-  </div>
-</header>
+  
 
-  <main id='post'>
-  <div class="content">
-    <article>
-        <section class="content markdown-body">
-          <h1>【广州城建职业学院】安朗（蓝蝴蝶）拨号客户端使用办法教程</h1>
-          <div class='post-meta'>
-            <i class="fa fa-calendar" aria-hidden="true"></i> <time>2018/09/23</time>
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://NipGeihou.com/2018/09/23/gzccc-amnoon/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="NipGeihou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NipGeihou Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">【广州城建职业学院】安朗（蓝蝴蝶）拨号客户端使用办法教程
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
             
             
-              | 
-                  <i class="fa fa-tag" aria-hidden="true"></i>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+
+              
                 
-               
-  <a href="/tags/#广州城建职业学院 安朗 蓝蝴蝶" class='tag'>广州城建职业学院 安朗 蓝蝴蝶</a>
+              
 
+              <time title="Post created: 2018-09-23 16:22:36" itemprop="dateCreated datePublished" datetime="2018-09-23T16:22:36+08:00">2018-09-23</time>
+            
 
             
-          </div>
-          <blockquote>
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2018-11-26 17:53:03" itemprop="dateModified" datetime="2018-11-26T17:53:03+08:00">2018-11-26</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
 <p>更新时间：2018年11月26日</p>
 </blockquote>
 <p><strong>师兄说：大部分的问题其实是可以自己解决的，因为师兄也是要上课的，不能做到随叫随到，为了不影响你的上网学习，强烈建议有一定动手能力的同学，先自行浏览下面的教程，尝试解决，如仍未解决，再告知师兄。</strong></p>
@@ -134,10 +527,10 @@
 </blockquote>
 <p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcu8kd8cxj20q70iyq4r.jpg" alt=""></p>
 <blockquote>
-<p>如没有出现此画面，请手动输入 <a href="http://www.gzccc.edu.cn/indexblue.htm" target="_blank" rel="noopener">http://www.gzccc.edu.cn/indexblue.htm</a>（务必将“indexblue.htm”也输入）  </p>
+<p>如没有出现此画面，请手动输入 <a href="http://www.gzccc.edu.cn/indexblue.htm" target="_blank" rel="noopener">http://www.gzccc.edu.cn/indexblue.htm</a>（务必将“indexblue.htm”也输入） 或<a href="http://2.2.2.2" target="_blank" rel="noopener">2.2.2.2</a> </p>
 </blockquote>
 <p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcucqenhcj20sy0gcq4z.jpg" alt=""></p>
-<p><strong>【更换浏览器、切换极速、兼容模式，如仍<code>不出现这网页</code>，请跳转到最下方<a href="##1">#1 不能出现认证网页</a>】</strong></p>
+<p><strong>【更换浏览器、切换极速、兼容模式，如仍<code>不出现这网页</code>，请跳转到最下方<a href="#bntzrz">#1 不能出现认证网页</a>】</strong></p>
 <h3 id="2">2. 安装「安朗（蓝蝴蝶）拨号客户端」</h3>
 
 <blockquote>
@@ -172,7 +565,7 @@
 <hr>
 <p><span id="jywk"></span></p>
 <h3 id="情况二：图标正常或为感叹号-同为，拨号时提示“您有多于1块网卡正在使用-”的解决办法"><a href="#情况二：图标正常或为感叹号-同为，拨号时提示“您有多于1块网卡正在使用-”的解决办法" class="headerlink" title="情况二：图标正常或为感叹号(同为，拨号时提示“您有多于1块网卡正在使用...”的解决办法)"></a><font color="blue">情况二：图标正常或为感叹号</font><strong><code>(同为，拨号时提示“您有多于1块网卡正在使用...”的解决办法)</code></strong></h3><blockquote>
-<p><strong>注意！请确认你的电脑跟机房正常连接，再进行教程，方法<a href="#jc">点击跳转</a>查看</strong>   </p>
+<p><strong>注意！请确认你的电脑跟机房正常连接，再进行下面的教程，不确定脑跟机房是否正常连接<a href="#jc">点击跳转</a>查看</strong>   </p>
 </blockquote>
 <p><strong>右键图标——点击打开“网络和Internet”设置</strong>  </p>
 <p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fvcvsza54mj208s03hjrg.jpg" alt="">  </p>
@@ -273,96 +666,372 @@
 </ol>
 <p><a href="http://www.gscholar.cn/2014/04/dhcp-client-error5.html" target="_blank" rel="noopener">参考文章 作者：书生的学习笔记《DHCP Client服务（位于本计算机上）错误5：拒绝访问的解决方法》 </a></p>
 
-        </section>
-    </article>
-    
-        
-  </div>
-  <aside>
-    
-    <div class="toc-container">
-        <h1>目录</h1>
-        <div class="content">
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#正常安装「蓝蝴蝶」步骤："><span class="toc-number">1.</span> <span class="toc-text">正常安装「蓝蝴蝶」步骤：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1"><span class="toc-number">1.1.</span> <span class="toc-text">1. 下载「安朗（蓝蝴蝶）拨号客户端」</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2"><span class="toc-number">1.2.</span> <span class="toc-text">2. 安装「安朗（蓝蝴蝶）拨号客户端」</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3"><span class="toc-number">1.3.</span> <span class="toc-text">3. 打开「安朗（蓝蝴蝶）拨号客户端」-拨号</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bntzrz"><span class="toc-number">2.</span> <span class="toc-text">#不能跳转到【认证页面】</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#情况一：图标是否有红叉"><span class="toc-number">2.1.</span> <span class="toc-text">情况一：图标是否有红叉 </span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#情况二：图标正常或为感叹号-同为，拨号时提示“您有多于1块网卡正在使用-”的解决办法"><span class="toc-number">2.2.</span> <span class="toc-text">情况二：图标正常或为感叹号(同为，拨号时提示“您有多于1块网卡正在使用...”的解决办法)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jygj"><span class="toc-number">3.</span> <span class="toc-text">#没有解压工具，找不到“解压到edu_supplicant…”？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cs"><span class="toc-number">4.</span> <span class="toc-text">#拨号时提示“服务器超时”</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#zj"><span class="toc-number">5.</span> <span class="toc-text">#拨号时提示类 终极解决办法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jc"><span class="toc-number">6.</span> <span class="toc-text">#检查电脑与机房连接是否正常</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#wifigxds"><span class="toc-number">7.</span> <span class="toc-text">#WIFI共享大师软件可能安装在本机，请卸载它(其他WIFI软件同理)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cshsb"><span class="toc-number">8.</span> <span class="toc-text">#蓝蝴蝶Windows通讯端口初始化失败</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fxms"><span class="toc-number">9.</span> <span class="toc-text">#飞行模式无法关闭</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#dhcpip"><span class="toc-number">10.</span> <span class="toc-text">#DHCP Client服务（位于本计算机上）错误5：拒绝访问)</span></a></li></ol>
-        </div>
-    </div>
-    
-  </aside>
-</main>
-
-
-
-  <footer>
-  <div class="copyright">
-    <div>
-      &copy; 2018 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a>&nbsp
-    </div>
-    <div>
-      Theme by <a href="https://github.com/lewis-geek/hexo-theme-Aath" target="_blank">Aath</a>
-    </div>
-  </div>
-</footer>
-
-
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="/lib/in-view.min.js"></script>
-<script src="/lib/lodash.min.js"></script>
-<script>
-  var isDown = true
-  var oldY = 0
-  inView.offset(50)
-
-  document.body.addEventListener('touchstart', function(){});
-  
-  window.addEventListener('scroll', _.throttle(e => {
-    var currentY = window.scrollY
-    if((oldY - currentY) < 0) {
-      isDown = true
-    } else {
-      isDown = false
-    }
-    oldY = currentY
-  }, 250))
-
-  $("article img").each(function() {
-      var strA = "<a data-fancybox='gallery' href='" + this.src + "'></a>";
-      $(this).wrapAll(strA);
-  });
-
-  $('.toc-link').each(function() {
-      var href = $(this).attr("href");
       
-      inView(href).on('exit', () => {
-        if (isDown) {
-          handleActive(href)
-        }
-      })
+    </div>
 
-      inView(href).on('enter', () => {
-        if (!isDown) {
-          handleActive(href)
-        }
-      })
+    
 
-      this.onclick = function(e) {
-        var pos = $(href).offset().top - 10;
-        $("html,body").animate({scrollTop: pos}, 300);
-        setTimeout(() => {
-          handleActive(href)
-        }, 350)
-        return false
-      }
-  })
+    
+    
+    
 
-  function handleActive(href) {
-    document.querySelectorAll('.toc-link').forEach(elm => {
-      elm.classList.remove('active')
-    })
-    document.querySelector(".toc [href='"+ href +"']").classList.add('active')
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/广州城建职业学院-安朗-蓝蝴蝶/" rel="tag"># 广州城建职业学院 安朗 蓝蝴蝶</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/22/TomcatFlashback/" rel="next" title="Tomcat 捕获闪退问题">
+                <i class="fa fa-chevron-left"></i> Tomcat 捕获闪退问题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/15/JavaJdkDifficulties/" rel="prev" title="JAVA JDK11+ Windows10 1809配置开发环境变量「问题心得」">
+                JAVA JDK11+ Windows10 1809配置开发环境变量「问题心得」 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">NipGeihou</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">Artikel</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">Tags</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#正常安装「蓝蝴蝶」步骤："><span class="nav-number">1.</span> <span class="nav-text">正常安装「蓝蝴蝶」步骤：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-number">1.1.</span> <span class="nav-text">1. 下载「安朗（蓝蝴蝶）拨号客户端」</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2"><span class="nav-number">1.2.</span> <span class="nav-text">2. 安装「安朗（蓝蝴蝶）拨号客户端」</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3"><span class="nav-number">1.3.</span> <span class="nav-text">3. 打开「安朗（蓝蝴蝶）拨号客户端」-拨号</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bntzrz"><span class="nav-number">2.</span> <span class="nav-text">#不能跳转到【认证页面】</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#情况一：图标是否有红叉"><span class="nav-number">2.1.</span> <span class="nav-text">情况一：图标是否有红叉 </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#情况二：图标正常或为感叹号-同为，拨号时提示“您有多于1块网卡正在使用-”的解决办法"><span class="nav-number">2.2.</span> <span class="nav-text">情况二：图标正常或为感叹号(同为，拨号时提示“您有多于1块网卡正在使用...”的解决办法)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jygj"><span class="nav-number">3.</span> <span class="nav-text">#没有解压工具，找不到“解压到edu_supplicant…”？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cs"><span class="nav-number">4.</span> <span class="nav-text">#拨号时提示“服务器超时”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zj"><span class="nav-number">5.</span> <span class="nav-text">#拨号时提示类 终极解决办法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jc"><span class="nav-number">6.</span> <span class="nav-text">#检查电脑与机房连接是否正常</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#wifigxds"><span class="nav-number">7.</span> <span class="nav-text">#WIFI共享大师软件可能安装在本机，请卸载它(其他WIFI软件同理)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cshsb"><span class="nav-number">8.</span> <span class="nav-text">#蓝蝴蝶Windows通讯端口初始化失败</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fxms"><span class="nav-number">9.</span> <span class="nav-text">#飞行模式无法关闭</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dhcpip"><span class="nav-number">10.</span> <span class="nav-text">#DHCP Client服务（位于本计算机上）错误5：拒绝访问)</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">NipGeihou</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.5.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
   }
 </script>
-<script src="/lib/jquery.fancybox.min.js"></script>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.5.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.5.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 </body>
 </html>
