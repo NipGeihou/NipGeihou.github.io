@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-hans">
+<html class="theme-next muse use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -115,7 +115,7 @@
 <meta property="og:url" content="https://NipGeihou.com/2018/10/15/JavaJdkDifficulties/index.html">
 <meta property="og:site_name" content="NipGeihou Blog">
 <meta property="og:description" content="在以往安装JAVA JDK的时候，我必然会百度一下，如何配置环境变量，这一次跟以往一样，我在百度随便找了一篇我认为认可的文章，跟着配置Windows的环境变量中遇到的一些问题和我的解决方法。   在文章教程中，讲到需要配置“CLASSPATH”、“Path”中的jre路径变量，但实际安装JAVA 11，JDK根目录下并不存在”jre”文件夹，查阅相关资料后得知：  现在也不再单独发JRE, Se">
-<meta property="og:locale" content="zh-hans">
+<meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw9cmonghoj20ho05xglr.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw9cvq9rusj20ro0ilta8.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw9d0exe40j20hk0iita9.jpg">
@@ -148,6 +148,16 @@
 
 
 
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?0fb846480c0c417e3eb5e471d1809efd";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -183,7 +193,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -209,7 +219,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Toggle navigation bar">
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -237,7 +247,41 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br />Startseite</a>
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
 
   </li>
         
@@ -254,7 +298,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archiv</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
 
   </li>
 
@@ -310,8 +354,8 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="NipGeihou">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="description" content="人文、科技、生活">
+      <meta itemprop="image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fxo22vg947j205k05kt8z.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -341,14 +385,14 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">发表于</span>
               
 
               
                 
               
 
-              <time title="Post created: 2018-10-15 23:34:22" itemprop="dateCreated datePublished" datetime="2018-10-15T23:34:22+08:00">2018-10-15</time>
+              <time title="创建时间：2018-10-15 23:34:22" itemprop="dateCreated datePublished" datetime="2018-10-15T23:34:22+08:00">2018-10-15</time>
             
 
             
@@ -363,9 +407,9 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
-                  <span class="post-meta-item-text">Edited on</span>
+                  <span class="post-meta-item-text">更新于</span>
                 
-                <time title="Updated at: 2018-10-16 00:26:27" itemprop="dateModified" datetime="2018-10-16T00:26:27+08:00">2018-10-16</time>
+                <time title="修改时间：2018-10-16 00:26:27" itemprop="dateModified" datetime="2018-10-16T00:26:27+08:00">2018-10-16</time>
               
             
           </span>
@@ -516,8 +560,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fxo22vg947j205k05kt8z.jpg"
+                alt="NipGeihou" />
+            
               <p class="site-author-name" itemprop="name">NipGeihou</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">人文、科技、生活</p>
           </div>
 
           
@@ -528,7 +576,7 @@
                   <a href="/archives/">
                 
                     <span class="site-state-item-count">5</span>
-                    <span class="site-state-item-name">Artikel</span>
+                    <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
@@ -551,7 +599,7 @@
                       
                     
                     <span class="site-state-item-count">4</span>
-                    <span class="site-state-item-name">Tags</span>
+                    <span class="site-state-item-name">标签</span>
                   
                 </div>
               
@@ -601,7 +649,7 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.7.1</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.7.1</div>
 
 
 
@@ -609,7 +657,7 @@
 
 
 
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.5.0</div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.5.0</div>
 
 
 
