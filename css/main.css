@@ -1705,11 +1705,6 @@ pre .javascript .function {
   display: inline-block;
   margin: 0.8em 2em 0 2em;
 }
-#QR > div:hover p {
-  animation: roll 0.1s infinite linear;
-  -webkit-animation: roll 0.1s infinite linear;
-  -moz-animation: roll 0.1s infinite linear;
-}
 @-moz-keyframes roll {
   from {
     -webkit-transform: rotateZ(30deg);
@@ -1992,7 +1987,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7fb811;
+  background: #ff13ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2923,6 +2918,10 @@ hr {
 .post-button a:hover {
   border-bottom-color: #222;
 }
+.posts-expand .post {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
 }
@@ -2986,4 +2985,17 @@ hr {
     width: auto;
     text-align: center;
   }
+}
+code {
+  color: #fff;
+  background: #4cb4e7;
+  margin: 2px;
+}
+.post {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background-color: rgba(255,255,255,0.9);
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
