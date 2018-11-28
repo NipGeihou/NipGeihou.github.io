@@ -86,7 +86,7 @@
     root: '/',
     scheme: 'Muse',
     version: '6.5.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -109,14 +109,14 @@
 
 
   <meta name="description" content="更新日期：2018年11月28日  hexo命令无效有一段时间没有写博文，（中间Windows 10进行过更新，不知是否与此有关），今天想更新、部署hexo到github，发现我用来一键部署的批处理文件，双击打开后直接闪退，随后我在博客根目录打开powershell，输入hexo如下提示： hexo : 无法将“hexo”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写">
-<meta name="keywords" content="Hexo 部署">
+<meta name="keywords" content="Hexo,Next">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo 部署遇到的问题与解决方法">
 <meta property="og:url" content="https://NipGeihou.com/2018/11/23/hexo_deploy/index.html">
 <meta property="og:site_name" content="NipGeihou Blog">
 <meta property="og:description" content="更新日期：2018年11月28日  hexo命令无效有一段时间没有写博文，（中间Windows 10进行过更新，不知是否与此有关），今天想更新、部署hexo到github，发现我用来一键部署的批处理文件，双击打开后直接闪退，随后我在博客根目录打开powershell，输入hexo如下提示： hexo : 无法将“hexo”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-28T12:26:39.032Z">
+<meta property="og:updated_time" content="2018-11-28T16:07:27.043Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 部署遇到的问题与解决方法">
 <meta name="twitter:description" content="更新日期：2018年11月28日  hexo命令无效有一段时间没有写博文，（中间Windows 10进行过更新，不知是否与此有关），今天想更新、部署hexo到github，发现我用来一键部署的批处理文件，双击打开后直接闪退，随后我在博客根目录打开powershell，输入hexo如下提示： hexo : 无法将“hexo”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写">
@@ -241,6 +241,8 @@
     
 
     
+      
+    
 
     <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
 
@@ -257,6 +259,8 @@
       
     
 
+    
+      
     
 
     <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
@@ -275,8 +279,29 @@
     
 
     
+      
+    
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">10</span></a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">1</span></a>
 
   </li>
         
@@ -292,8 +317,10 @@
     
 
     
+      
+    
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">5</span></a>
 
   </li>
 
@@ -404,7 +431,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-28 20:26:39" itemprop="dateModified" datetime="2018-11-28T20:26:39+08:00">2018-11-28</time>
+                <time title="修改时间：2018-11-29 00:07:27" itemprop="dateModified" datetime="2018-11-29T00:07:27+08:00">2018-11-29</time>
               
             
           </span>
@@ -413,6 +440,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/23/hexo_deploy/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/11/23/hexo_deploy/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -420,6 +457,34 @@
 
           
 
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">1.6k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">3 分钟</span>
+              
+            </div>
           
 
           
@@ -444,11 +509,47 @@
 <p><code>hexo : 无法将“hexo”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确 ，然后再试一次。</code></p>
 <p>解决方法：<br>在系统变量<code>Path</code>中添加hexo根目录的<code>node_modules\.bin</code>，如我的：<code>D:\Blog\node_modules\.bin;</code></p>
 <p>参考文章：<a href="http://blog.codesfile.com/2018/02/28/hexo问题/" target="_blank" rel="noopener">hexo问题</a></p>
-<h2 id="next-6-0-无法配置语言为简体中文"><a href="#next-6-0-无法配置语言为简体中文" class="headerlink" title="next 6.0 无法配置语言为简体中文"></a>next 6.0 无法配置语言为简体中文</h2><p>在网上常见的几个Next主题配置教程中，教大家配置语言为简体中文的时候，都是将<code>站点</code>配置文件（_config.yml）中的 <code>language</code>后面添加<code>zh-Hans</code>，即：</p>
+<h1 id="next主题-问题"><a href="#next主题-问题" class="headerlink" title="next主题 问题"></a>next主题 问题</h1><h2 id="next-6-0-无法配置语言为简体中文"><a href="#next-6-0-无法配置语言为简体中文" class="headerlink" title="next 6.0 无法配置语言为简体中文"></a>next 6.0 无法配置语言为简体中文</h2><p>在网上常见的几个Next主题配置教程中，教大家配置语言为简体中文的时候，都是将<code>站点</code>配置文件（_config.yml）中的 <code>language</code>后面添加<code>zh-Hans</code>，即：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">language: zh-Hans</span><br></pre></td></tr></table></figure>
 <p>但实际操作后，发现是<code>无效</code>的，而这样声明语言，在6.0以下版本是可用的，在6.0版本却不能正常识别。</p>
 <p>实测6.0版本应将language声明为</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">language: zh-CN</span><br></pre></td></tr></table></figure>
+<h2 id="next-添加tags（标签）、categories（分类）等标签"><a href="#next-添加tags（标签）、categories（分类）等标签" class="headerlink" title="next 添加tags（标签）、categories（分类）等标签"></a>next 添加tags（标签）、categories（分类）等标签</h2><p>在hexo<code>根目录</code>，使用<code>PowerShell</code>（不限于）输入：<code>hexo new page &#39;tags&#39;</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">PS D:\Blog&gt; hexo new page &apos;tags&apos;    # categories（分类）则将tags改为categories</span><br><span class="line">INFO  Created: D:\</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意：不要在预览状态下，避免出现问题。</p>
+</blockquote>
+<p>执行完命令后，编辑 <code>.\source\tags</code>下的<code>index.md</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line">date: 2018-11-28 20:53:25</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<p>添加type属性：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line">date: 2018-11-28 20:53:25</span><br><span class="line">type: tags</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<p>categories（分类）同理，如不添加type属性会造成，无法正常显示该页面。</p>
+<h2 id="next-6-0-动态背景无效"><a href="#next-6-0-动态背景无效" class="headerlink" title="next 6.0 动态背景无效"></a>next 6.0 动态背景无效</h2><ol>
+<li>进入theme/next目录 </li>
+<li>执行命令：<code>git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest</code></li>
+<li><code>主题</code>配置文件<code>_config.yml</code>中的</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">canvas_nest: false</span><br></pre></td></tr></table></figure>
+<p>改为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">canvas_nest: true</span><br></pre></td></tr></table></figure>
+<p><a href="https://blog.csdn.net/weixin_39345384/article/details/80544660" target="_blank" rel="noopener">参考文章：NexT v6.0+ 背景动画Canvas_nest设置无效的解决方案</a></p>
+<h2 id="next6-0-添加文章字数，阅读时间"><a href="#next6-0-添加文章字数，阅读时间" class="headerlink" title="next6.0 添加文章字数，阅读时间"></a>next6.0 添加文章字数，阅读时间</h2><ol>
+<li>在next的配置文件(_config.yml)中修个为：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: true</span><br><span class="line">  item_text_post: true</span><br><span class="line">  item_text_total: true</span><br><span class="line">  awl: 2         #平均字长</span><br><span class="line">  wpm: 275       #每分钟字数</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<blockquote>
+<p>中文用户建议设置<code>awl：2</code>和<code>wpm：300</code>，<br>但如果你经常把你的帖子和英语混用，<code>awl：4</code>和<code>wpm：275</code>会更好。</p>
+</blockquote>
+<ol start="2">
+<li>在hexo根目录，执行：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-symbols-count-time --save</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li><p><code>（重点）</code>并在站点配置文件(_config.yml)中添加：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">symbols_count_time:</span><br><span class="line">  symbols: true</span><br><span class="line">  time: true</span><br><span class="line">  total_symbols: true</span><br><span class="line">  total_time: true</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>预览、部署</p>
+</li>
+</ol>
+
       
     </div>
 
@@ -464,14 +565,68 @@
        
     
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
 
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fxo3adsb7hj20tz14qqdd.jpg" alt="NipGeihou 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fxo3612qcdj20p011igwo.jpg" alt="NipGeihou 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        
+
+
+
+  
+
+
+
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>NipGeihou</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    
+    <a href="https://NipGeihou.com/2018/11/23/hexo_deploy/" title="Hexo 部署遇到的问题与解决方法">https://NipGeihou.com/2018/11/23/hexo_deploy/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
     
 
     <footer class="post-footer">
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo-部署/" rel="tag"># Hexo 部署</a>
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+            <a href="/tags/Next/" rel="tag"># Next</a>
           
         </div>
       
@@ -484,8 +639,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/28/gzccc-amnoon2/" rel="next" title="安朗（蓝蝴蝶）拨号客户端使用及常见网络故障问题解决办法">
-                <i class="fa fa-chevron-left"></i> 安朗（蓝蝴蝶）拨号客户端使用及常见网络故障问题解决办法
+              <a href="/2018/10/28/gzccc-amnoon2/" rel="next" title="Windows网络故障CMD、Powershell常用修复命令">
+                <i class="fa fa-chevron-left"></i> Windows网络故障CMD、Powershell常用修复命令
               </a>
             
           </div>
@@ -514,6 +669,9 @@
           </div>
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -573,12 +731,25 @@
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
 
               
                 
                 
                 <div class="site-state-item site-state-tags">
-                  
+                  <a href="/tags/index.html">
                     
                     
                       
@@ -589,9 +760,21 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">标签</span>
-                  
+                  </a>
                 </div>
               
             </nav>
@@ -600,7 +783,53 @@
           
 
           
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/NipGeihou" title="GitHub &rarr; https://github.com/NipGeihou" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:NipGeihou@foxmail.com" title="E-Mail &rarr; mailto:NipGeihou@foxmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://weibo.com/2643914060" title="Weibo &rarr; https://weibo.com/2643914060" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                </span>
+              
+            </div>
+          
 
+          
+             <div class="cc-license motion-element" itemprop="license">
+              
+                
+              
+              
+              
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" /></a>
+             </div>
           
 
           
@@ -624,7 +853,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo命令无效"><span class="nav-number">1.</span> <span class="nav-text">hexo命令无效</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next-6-0-无法配置语言为简体中文"><span class="nav-number">2.</span> <span class="nav-text">next 6.0 无法配置语言为简体中文</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo命令无效"><span class="nav-number">1.</span> <span class="nav-text">hexo命令无效</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#next主题-问题"><span class="nav-number"></span> <span class="nav-text">next主题 问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#next-6-0-无法配置语言为简体中文"><span class="nav-number">1.</span> <span class="nav-text">next 6.0 无法配置语言为简体中文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next-添加tags（标签）、categories（分类）等标签"><span class="nav-number">2.</span> <span class="nav-text">next 添加tags（标签）、categories（分类）等标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next-6-0-动态背景无效"><span class="nav-number">3.</span> <span class="nav-text">next 6.0 动态背景无效</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next6-0-添加文章字数，阅读时间"><span class="nav-number">4.</span> <span class="nav-text">next6.0 添加文章字数，阅读时间</span></a></li></ol></div>
             
 
           </div>
@@ -644,27 +873,41 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; 2017 – <span itemprop="copyrightYear">2018</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">NipGeihou</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点总字数：</span>
+    
+    <span title="站点总字数">8k</span>
+  
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    
+    <span title="站点阅读时长">14 分钟</span>
   
 </div>
 
 
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.7.1</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动</div>
 
 
 
-  <span class="post-meta-divider">|</span>
 
-
-
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.5.0</div>
 
 
 
@@ -685,6 +928,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
@@ -716,6 +961,12 @@
 
 
 
+
+  
+    
+      
+  
+  <script type="text/javascript" color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
 
@@ -783,6 +1034,31 @@
 
 
 
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'f2h7Vmrq3CUDju2kPX02DOav-gzGzoHsz',
+        appKey: '1mw5D5QIDcSdfcTiAICg7gCK',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        meta:guest,
+        pageSize:'10' || 10,
+        visitor: false
+    });
+  </script>
+
 
 
   
@@ -815,6 +1091,13 @@
   
 
   
+  
+
+  
+  
+
+  
+
 
 </body>
 </html>
