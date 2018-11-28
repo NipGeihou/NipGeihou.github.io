@@ -108,6 +108,16 @@
 
 
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
   <meta name="description" content="在Tomcat的根目录下，在空白处按住Shift+右击，选择“在此处打开Powershell”（Win10以下版本为CMD），cmd、PowerShell均可。   输入startup.bat run 回车，便会提示什么问题导致闪退，根据所提示的内容重新配置环境变量。    在设置环境变量时，JAVA_HOME、JRE_HOME等根目录路径变量值时结尾无需添加”;”（分号）  如果还是不行，手动">
 <meta name="keywords" content="Tomcat,Tomcat9,闪退">
 <meta property="og:type" content="article">
@@ -254,25 +264,6 @@
         
         
           
-          <li class="menu-item menu-item-about">
-
-    
-    
-    
-      
-    
-
-    
-      
-    
-
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
-
-  </li>
-        
-        
-        
-          
           <li class="menu-item menu-item-tags">
 
     
@@ -399,6 +390,7 @@
         
 
         <div class="post-meta">
+			
           <span class="post-time">
 
             
@@ -593,11 +585,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Tomcat/" rel="tag"># Tomcat</a>
+            <a href="/tags/Tomcat/" rel="tag"><i class="fa fa-tag"></i> Tomcat</a>
           
-            <a href="/tags/Tomcat9/" rel="tag"># Tomcat9</a>
+            <a href="/tags/Tomcat9/" rel="tag"><i class="fa fa-tag"></i> Tomcat9</a>
           
-            <a href="/tags/闪退/" rel="tag"># 闪退</a>
+            <a href="/tags/闪退/" rel="tag"><i class="fa fa-tag"></i> 闪退</a>
           
         </div>
       
@@ -856,7 +848,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">8k</span>
+    <span title="站点总字数">9k</span>
   
 
   
@@ -867,12 +859,12 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">15 分钟</span>
+    <span title="站点阅读时长">16 分钟</span>
   
 </div>
 
 
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动</div> 
 
 
 
@@ -935,7 +927,7 @@
     
       
   
-  <script type="text/javascript" color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script type="text/javascript" color='0,0,0' opacity='0.8' zIndex='-1' count='150' src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
 
@@ -1068,5 +1060,7 @@
   
 
 
+  <!-- 页面点击核心价值观 -->
+	<script type="text/javascript" src="/js/src/hxjzg.js"></script>
 </body>
 </html>
