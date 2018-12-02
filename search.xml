@@ -58,6 +58,9 @@
     <title><![CDATA[JAVA JDK11+ Windows10 1809配置开发环境变量「问题心得」]]></title>
     <url>%2F2018%2F10%2F15%2FJavaJdkDifficulties%2F</url>
     <content type="text"><![CDATA[在以往安装JAVA JDK的时候，我必然会百度一下，如何配置环境变量，这一次跟以往一样，我在百度随便找了一篇我认为认可的文章，跟着配置Windows的环境变量中遇到的一些问题和我的解决方法。 在文章教程中，讲到需要配置“CLASSPATH”、“Path”中的jre路径变量，但实际安装JAVA 11，JDK根目录下并不存在”jre”文件夹，查阅相关资料后得知： 现在也不再单独发JRE, Server JRE这些小体积版本, 从安装后的文件中可以看到传统分离的JRE和JDK现在已经合并了, Java的编译部分已经可以看成是运行时的一部分了.` CLASSPATH也不再需要，实测确实如此，那么正确的配置方法应该是： 1.在【系统变量】-【新建】 变量名：JAVA_HOME变量值：D:\JDK\11（以你实际安装路径为准） 2.找到变量：Path-编辑添加：%JAVA_HOME%\bin （或刚刚添加 JAVA_HOME的变量值+”\bin”,比如我的D:\JDK\11\bin）（由于我的电脑不明原因导致，echo %JAVA_HOME%返回并不是D:\JDK\11，只好通过绝对路径添加到Path） 至此配置完成，配置环境从原来的4个变量值减少至2个。 可以在CMD或PowerShell中输入： java -version 显示java版本javac 运行javac时无效，需要配置JAVA_HOME环境变量echo %JAVA_HOME% 返回JAVA_HOME变量值 参考文章：Java10环境配置无jre问题]]></content>
+      <categories>
+        <category>JAVA</category>
+      </categories>
       <tags>
         <tag>JAVA</tag>
       </tags>
