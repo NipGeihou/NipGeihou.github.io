@@ -46,7 +46,7 @@
   <entry>
     <title><![CDATA[Windows网络故障CMD、Powershell常用修复命令]]></title>
     <url>%2Fgzccc-amnoon2%2F</url>
-    <content type="text"><![CDATA[更新日期：2018年11月26日 ipconfigipconfig /... flushdns 刷新DNS缓存 release 手动释放ip配置 renew 重新获取ip配置 检测DNS解析是否正确nslookup 重置 Winsock 目录重新初始化网络环境，以解决由于软件冲突、病毒原因造成的参数错误问题 netsh winsock reset 刷新ARP缓存arp -d * 重置 TCP/IP协议“resetlog.txt”文件是用来记录命令执行结果的日志文件，该参数选项必须指定 netsh int ip reset c:\resetlog.txt]]></content>
+    <content type="text"><![CDATA[ipconfig123456ipconfig /... ? #进行参数查询 all #显示本机TCP/IP配置的详细信息 flushdns #刷新DNS缓存 release #DHCP客户端手工释放IP地址 renew #DHCP客户端手工向服务器刷新请求 检测DNS解析是否正确nslookup 重置 Winsock 目录重新初始化网络环境，以解决由于软件冲突、病毒原因造成的参数错误问题 netsh winsock reset 刷新ARP缓存arp -d * 重置 TCP/IP协议“resetlog.txt”文件是用来记录命令执行结果的日志文件，该参数选项必须指定 netsh int ip reset c:\resetlog.txt 获取MAC地址getmac 配置属性，常见MAC地址属性名：网络地址、Network Address、MAC Address]]></content>
       <categories>
         <category>网络</category>
       </categories>
