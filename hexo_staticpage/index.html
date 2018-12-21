@@ -123,18 +123,21 @@
 
 
 
-  <meta name="description" content="将Hexo部署到GitHub时，执行hexo d -g，会先生成静态网页文件到public文件夹，然后将public的文件部署到GitHub上。   正常情况下，Hexo会将source文件夹里的Markdown文件转换成带有  参考文章：Hexo渲染时排除部分文件或目录、hexo 添加自定义页面（转）">
+  <meta name="description" content="将Hexo部署到GitHub时，执行hexo d -g，会先生成静态网页文件到public文件夹，然后将public的文件部署到GitHub上。 正常情况下，Hexo会将source文件夹下的文件夹的Markdown文件编译生成带有主题样式的HTML文件，如果需要一个独立的静态网站则需要如下配置：  在站点的_config.yml添加：  123skip_render:     - &apos;test1/">
 <meta name="keywords" content="Hexo,Github">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【Hexo】放置自己的独立网页，生成不被删除">
 <meta property="og:url" content="https://NipGeihou.com/hexo_staticpage/index.html">
 <meta property="og:site_name" content="NipGeihou Blog">
-<meta property="og:description" content="将Hexo部署到GitHub时，执行hexo d -g，会先生成静态网页文件到public文件夹，然后将public的文件部署到GitHub上。   正常情况下，Hexo会将source文件夹里的Markdown文件转换成带有  参考文章：Hexo渲染时排除部分文件或目录、hexo 添加自定义页面（转）">
+<meta property="og:description" content="将Hexo部署到GitHub时，执行hexo d -g，会先生成静态网页文件到public文件夹，然后将public的文件部署到GitHub上。 正常情况下，Hexo会将source文件夹下的文件夹的Markdown文件编译生成带有主题样式的HTML文件，如果需要一个独立的静态网站则需要如下配置：  在站点的_config.yml添加：  123skip_render:     - &apos;test1/">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-10T17:07:03.440Z">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fy9qrlc3n5j209v06naa0.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fy9quwqujcj205z01r0si.jpg">
+<meta property="og:updated_time" content="2018-12-17T06:56:15.560Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【Hexo】放置自己的独立网页，生成不被删除">
-<meta name="twitter:description" content="将Hexo部署到GitHub时，执行hexo d -g，会先生成静态网页文件到public文件夹，然后将public的文件部署到GitHub上。   正常情况下，Hexo会将source文件夹里的Markdown文件转换成带有  参考文章：Hexo渲染时排除部分文件或目录、hexo 添加自定义页面（转）">
+<meta name="twitter:description" content="将Hexo部署到GitHub时，执行hexo d -g，会先生成静态网页文件到public文件夹，然后将public的文件部署到GitHub上。 正常情况下，Hexo会将source文件夹下的文件夹的Markdown文件编译生成带有主题样式的HTML文件，如果需要一个独立的静态网站则需要如下配置：  在站点的_config.yml添加：  123skip_render:     - &apos;test1/">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fy9qrlc3n5j209v06naa0.jpg">
 
 
 
@@ -297,7 +300,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">6</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">5</span></a>
 
   </li>
         
@@ -316,7 +319,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">9</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">11</span></a>
 
   </li>
 
@@ -459,7 +462,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-12-11 01:07:03" itemprop="dateModified" datetime="2018-12-11T01:07:03+08:00">2018-12-11</time>
+                <time title="修改时间：2018-12-17 14:56:15" itemprop="dateModified" datetime="2018-12-17T14:56:15+08:00">2018-12-17</time>
               
             
           </span>
@@ -496,7 +499,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">154</span>
+                <span title="本文字数">350</span>
               
 
               
@@ -530,12 +533,26 @@
       
 
       
-        <blockquote>
-<p>将Hexo部署到GitHub时，执行<code>hexo d -g</code>，会先生成静态网页文件到<code>public</code>文件夹，然后将<code>public</code>的文件部署到GitHub上。</p>
-</blockquote>
-<blockquote>
-<p>正常情况下，Hexo会将<code>source</code>文件夹里的Markdown文件转换成带有</p>
-</blockquote>
+        <p>将Hexo部署到GitHub时，执行<code>hexo d -g</code>，会先生成静态网页文件到<code>public</code>文件夹，然后将<code>public</code>的文件部署到GitHub上。</p>
+<p>正常情况下，Hexo会将<code>source</code>文件夹下的文件夹的Markdown文件编译生成带有主题样式的HTML文件，如果需要一个独立的静态网站则需要如下配置：</p>
+<ol start="0">
+<li>在<code>站点</code>的<code>_config.yml</code>添加：</li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">skip_render:</span> </span><br><span class="line"><span class="bullet">    -</span> <span class="string">'test1/**'</span></span><br><span class="line"><span class="bullet">    -</span> <span class="string">'test2/**'</span></span><br></pre></td></tr></table></figure>
+<ol>
+<li>在<code>/source</code>中放置的网页目录</li>
+</ol>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fy9qrlc3n5j209v06naa0.jpg" alt=""></p>
+<ol start="2">
+<li>在文件夹中放置你的index.html、css等文件</li>
+</ol>
+<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fy9quwqujcj205z01r0si.jpg" alt=""></p>
+<ol start="3">
+<li><p>再次执行<code>hexo d -g</code>，部署到GitHub</p>
+</li>
+<li><p>输入<code>域名/文件夹名</code>即可访问</p>
+</li>
+</ol>
 <p>参考文章：<a href="https://www.maoxuner.cn/2017/03/10/hexo-skip-render.html" target="_blank" rel="noopener">Hexo渲染时排除部分文件或目录</a>、<a href="https://www.jianshu.com/p/a25bfaa4c7cb" target="_blank" rel="noopener">hexo 添加自定义页面（转）</a></p>
 
       
@@ -552,35 +569,6 @@
     
        
     
-    
-      <div>
-        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
-  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-    <span>打赏</span>
-  </button>
-  <div id="QR" style="display: none;">
-
-    
-      <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fxo3adsb7hj20tz14qqdd.jpg" alt="NipGeihou 微信支付"/>
-        <p>微信支付</p>
-      </div>
-    
-
-    
-      <div id="alipay" style="display: inline-block">
-        <img id="alipay_qr" src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fxo3612qcdj20p011igwo.jpg" alt="NipGeihou 支付宝"/>
-        <p>支付宝</p>
-      </div>
-    
-
-    
-
-  </div>
-</div>
-
-      </div>
     
 
     
@@ -627,8 +615,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/RecommendationSite/" rel="next" title="马克的一些学习网站">
-                <i class="fa fa-chevron-left"></i> 马克的一些学习网站
+              <a href="/RecommendationSite/" rel="next" title="Mark的一些网站">
+                <i class="fa fa-chevron-left"></i> Mark的一些网站
               </a>
             
           </div>
@@ -636,6 +624,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/hexo_uml/" rel="prev" title="【Hexo】使用PlantUML插件画UML图">
+                【Hexo】使用PlantUML插件画UML图 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -703,7 +695,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -715,8 +707,6 @@
                 <div class="site-state-item site-state-categories">
                   <a href="/categories/index.html">
                     
-                    
-                      
                     
                       
                     
@@ -785,7 +775,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">21</span>
+                    <span class="site-state-item-count">22</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -906,7 +896,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">14k</span>
+    <span title="站点总字数">16k</span>
   
 
   
@@ -917,7 +907,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">26 分钟</span>
+    <span title="站点阅读时长">29 分钟</span>
   
 </div>
 

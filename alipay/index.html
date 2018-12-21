@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>支付宝红包</title>
+    <meta charset='utf-8' />
+    <meta name="keywords" />
+    <meta name="description" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="./css/m.common.css" />
+    <style>
+
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            max-width: 500px;
+            background: #fff;
+            background-image: -webkit-linear-gradient(bottom, #2e7ed9, #19379a);
+            background-image: -moz-linear-gradient(bottom, #2e7ed9, #19379a);
+            background-image: -o-linear-gradient(bottom, #2e7ed9, #19379a);
+            background-image: linear-gradient(bottom, #2e7ed9, #19379a);
+        }
+
+        a {
+            background-image: url('./images/alipay-bg.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center center;
+            border-radius: 5px;
+            margin: 0 auto;
+            padding: 0.1rem;
+            color: #fff;
+            display: block;
+            font-size: 12px;
+            text-decoration: none;
+            line-height: 22px;
+            width: 37.3rem;
+            height: 55rem;
+        }
+
+        span {
+            display: block;
+            margin-top: 34.6rem;
+            margin-left: auto;
+            margin-right: auto;
+            width: 18rem;
+            height: 3.8rem;
+            font-size: 2.6rem;
+            color: #ffde93;
+            text-align: center;
+            line-height:3.8rem;
+        }
+    </style>
+    <script>
+        document.documentElement.style.fontSize = (document.documentElement.clientWidth > 500 ? 500 : document.documentElement.clientWidth) / 37.5 + 'px';
+    </script>
+</head>
+<body>
+    <a href="javascript:return false" data-clipboard-text="555101872">
+        <span>555101872</span>
+    </a>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://img.lapin365.com/mall/js/clipboard.min.js"></script>
+    <script src="./js/showToast.js"></script>
+    <link rel="stylesheet" href="./css/showToast.css">
+    <script>
+        $(function () {
+            $("a").click(function () {
+                //$(this).attr("data-clipboard-text", text);
+
+                var clipboard1 = new ClipboardJS('a');
+                clipboard1.on('success', function (e) {
+
+                    showToast.show('复制成功，请在支付宝中粘贴搜索!', 2500);
+                    e.clearSelection();
+
+                    setTimeout(function () {
+                        var url = "alipay://index";
+                        var isAndroid = /(Android)/i.test(navigator.userAgent);
+                        if (isAndroid)
+                            url = "alipays://index";
+                        document.location = url;
+                    }, 1500);
+                });
+
+
+            });
+        });
+
+    </script>
+
+</body>
+</html>
