@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[【软路由】LEDE单臂软路由初体验]]></title>
+    <url>%2Frouter-on-a-stick%2F</url>
+    <content type="text"><![CDATA[先挖坑 有空写]]></content>
+      <categories>
+        <category>软路由</category>
+      </categories>
+      <tags>
+        <tag>网络</tag>
+        <tag>软路由</tag>
+        <tag>LEDE</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[【城建】修网日志]]></title>
     <url>%2Fgzccc_amnoon_2%2F</url>
     <content type="text"><![CDATA[请善用Ctrl+F或使用网站的全局搜索功能 2018年12月17日 6栋宿舍，大部分交换机闪红灯，会出现线路不通、反复连接、断开、连接、获取不到IP等问题，需要将网卡双工改为10Mbps 全双工（10Mbps Full Duplex），尽量不要改成半双工（Half Duplex）， 改为10Mbps 全双工（10Mbps Full Duplex）后，仍无法获取IP，则将重装、更新网卡驱动。 校医室妇科办公室电脑，有着与上述一样的问题，自适应模式下会出现线路不通、反复连接、断开、连接、获取不到IP等问题，将网卡双工改为10Mbps 全双工（10Mbps Full Duplex）解决。另校医室端口为：S632的16 17 19 20 22口]]></content>
