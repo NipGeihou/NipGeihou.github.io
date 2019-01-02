@@ -123,21 +123,21 @@
 
 
 
-  <meta name="description" content="使用场景：　　我的校园网账号是4Mbps下行0.5Mbps上行的，不足以满足我的正常使用，而4G蜂窝网络的速度远远高于我校园网的速度，因此我更愿意通过手机流量来上网，但由于学校教务管理的部分网站是必须内网进入的（如：抢课、计算机一级模拟题练习、题库系统、图书管理……），因此我需要同时使用手机流量和校园网（既内网和外网），也就有了本文。  我校，即便没有开通校园网也可以访问内网服务（知网等需要校园网">
+  <meta name="description" content="不用办理校园网，也可以实现一边访问内网（抢课、做题）一边外网聊天、上网冲浪">
 <meta name="keywords" content="网络,内网">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【网络】实现双网卡同时使用（一个内网，一个外网）">
 <meta property="og:url" content="https://NipGeihou.com/RoutingTable/index.html">
 <meta property="og:site_name" content="NipGeihou Blog">
-<meta property="og:description" content="使用场景：　　我的校园网账号是4Mbps下行0.5Mbps上行的，不足以满足我的正常使用，而4G蜂窝网络的速度远远高于我校园网的速度，因此我更愿意通过手机流量来上网，但由于学校教务管理的部分网站是必须内网进入的（如：抢课、计算机一级模拟题练习、题库系统、图书管理……），因此我需要同时使用手机流量和校园网（既内网和外网），也就有了本文。  我校，即便没有开通校园网也可以访问内网服务（知网等需要校园网">
+<meta property="og:description" content="不用办理校园网，也可以实现一边访问内网（抢课、做题）一边外网聊天、上网冲浪">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fysg9yi97bj20gd04ndg5.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fysgp6cgoej20h609uwek.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fyshg4zl8tj20hs0brjrj.jpg">
-<meta property="og:updated_time" content="2019-01-02T12:17:46.874Z">
+<meta property="og:updated_time" content="2019-01-02T12:58:13.707Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【网络】实现双网卡同时使用（一个内网，一个外网）">
-<meta name="twitter:description" content="使用场景：　　我的校园网账号是4Mbps下行0.5Mbps上行的，不足以满足我的正常使用，而4G蜂窝网络的速度远远高于我校园网的速度，因此我更愿意通过手机流量来上网，但由于学校教务管理的部分网站是必须内网进入的（如：抢课、计算机一级模拟题练习、题库系统、图书管理……），因此我需要同时使用手机流量和校园网（既内网和外网），也就有了本文。  我校，即便没有开通校园网也可以访问内网服务（知网等需要校园网">
+<meta name="twitter:description" content="不用办理校园网，也可以实现一边访问内网（抢课、做题）一边外网聊天、上网冲浪">
 <meta name="twitter:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fysg9yi97bj20gd04ndg5.jpg">
 
 
@@ -446,7 +446,7 @@
                 
               
 
-              <time title="创建时间：2019-01-02 18:27:17 / 修改时间：20:17:46" itemprop="dateCreated datePublished" datetime="2019-01-02T18:27:17+08:00">2019-01-02</time>
+              <time title="创建时间：2019-01-02 18:27:17 / 修改时间：20:58:13" itemprop="dateCreated datePublished" datetime="2019-01-02T18:27:17+08:00">2019-01-02</time>
             
 
             
@@ -522,7 +522,11 @@
       
 
       
-        <h2 id="使用场景："><a href="#使用场景：" class="headerlink" title="使用场景："></a>使用场景：</h2><p>　　我的校园网账号是<code>4Mbps下行0.5Mbps上行</code>的，不足以满足我的正常使用，而4G蜂窝网络的速度远远高于我校园网的速度，因此我更愿意通过手机流量来上网，但由于学校<code>教务管理</code>的部分网站是必须内网进入的（如：抢课、计算机一级模拟题练习、题库系统、图书管理……），因此我需要同时使用手机流量和校园网（既内网和外网），也就有了本文。</p>
+        <blockquote>
+<p><code>不用办理校园网</code>，也可以实现一边访问内网（抢课、做题）一边外网聊天、上网冲浪</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="使用场景："><a href="#使用场景：" class="headerlink" title="使用场景："></a>使用场景：</h2><p>　　我的校园网账号是<code>4Mbps下行0.5Mbps上行</code>的，不足以满足我的正常使用，而4G蜂窝网络的速度远远高于我校园网的速度，因此我更愿意通过手机流量来上网，但由于学校<code>教务管理</code>的部分网站是必须内网进入的（如：抢课、计算机一级模拟题练习、题库系统、图书管理……），因此我需要同时使用手机流量和校园网（既内网和外网），也就有了本文。</p>
 <blockquote>
 <p>我校，即便没有开通校园网也可以访问内网服务（知网等需要校园网IP访问的外网网站除外），只需将宿舍墙上的网线与电脑相连即可，无需使用蓝蝴蝶拨号。</p>
 </blockquote>
