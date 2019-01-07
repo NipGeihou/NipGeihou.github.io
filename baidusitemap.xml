@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://NipGeihou.com/RoutingTable/</loc>
-    <lastmod>2019-01-02T13:02:31.692Z</lastmod>
-  </url>  <url>
     <loc>https://NipGeihou.com/router-on-a-stick/</loc>
-    <lastmod>2018-12-27T15:45:19.801Z</lastmod>
+    <lastmod>2019-01-06T10:47:20.148Z</lastmod>
   </url>  <url>
     <loc>https://NipGeihou.com/gzccc_amnoon_2/</loc>
-    <lastmod>2018-12-17T11:05:49.544Z</lastmod>
+    <lastmod>2019-01-06T10:16:05.986Z</lastmod>
+  </url>  <url>
+    <loc>https://NipGeihou.com/Broadcom_k2p_vlan/</loc>
+    <lastmod>2019-01-06T07:44:56.322Z</lastmod>
+  </url>  <url>
+    <loc>https://NipGeihou.com/RoutingTable/</loc>
+    <lastmod>2019-01-06T04:09:46.394Z</lastmod>
   </url>  <url>
     <loc>https://NipGeihou.com/RecommendationSite/</loc>
     <lastmod>2018-12-17T10:43:12.362Z</lastmod>
