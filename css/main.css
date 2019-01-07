@@ -1987,7 +1987,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffd4f6;
+  background: #03b434;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3011,4 +3011,10 @@ body {
 }
 .brand {
   color: #f4f4f4;
+}
+.brand:hover {
+  color: #f4f4f4;
+}
+.menu .menu-item .badge {
+  background-color: rgba(255,255,255,0.8);
 }
