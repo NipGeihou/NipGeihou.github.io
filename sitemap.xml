@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://NipGeihou.com/hexo-next/</loc>
+    
+    <lastmod>2019-01-09T19:38:20.320Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://NipGeihou.com/categories/index.html</loc>
     
     <lastmod>2019-01-09T16:26:49.056Z</lastmod>
@@ -82,13 +89,6 @@
     <loc>https://NipGeihou.com/hexo_deploy/</loc>
     
     <lastmod>2018-12-17T07:30:27.220Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://NipGeihou.com/hexo-next/</loc>
-    
-    <lastmod>2018-12-17T06:59:25.284Z</lastmod>
     
   </url>
   
