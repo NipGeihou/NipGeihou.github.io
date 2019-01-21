@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://NipGeihou.com/problem/requestutf-8/</loc>
+    <lastmod>2019-01-21T13:24:47.258Z</lastmod>
+  </url>  <url>
+    <loc>https://NipGeihou.com/LinuxLearning/</loc>
+    <lastmod>2019-01-18T15:30:24.838Z</lastmod>
+  </url>  <url>
     <loc>https://NipGeihou.com/life/2019-1-11ZealerGZ/</loc>
     <lastmod>2019-01-11T17:45:39.909Z</lastmod>
   </url>  <url>
@@ -9,9 +15,6 @@
   </url>  <url>
     <loc>https://NipGeihou.com/hexo-next/</loc>
     <lastmod>2019-01-09T19:38:20.320Z</lastmod>
-  </url>  <url>
-    <loc>https://NipGeihou.com/LinuxLearning/</loc>
-    <lastmod>2019-01-09T07:28:13.977Z</lastmod>
   </url>  <url>
     <loc>https://NipGeihou.com/RoutingTable/</loc>
     <lastmod>2019-01-07T12:00:22.565Z</lastmod>
