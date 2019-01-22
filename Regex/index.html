@@ -123,17 +123,18 @@
 
 
 
-  <meta name="description" content="nihao">
+  <meta name="description" content="中文：正则表达式 英文：Regular Expression，Regex，Regexp 常见匹配规则    字符语法 说明     \d 匹配一个数字字符。等价于[0-9]。grep 要加上-P，perl正则支持   \D 匹配一个非数字字符。等价于[^0-9]。grep要加上-P，perl正则支持   \f 匹配一个换页符。等价于\x0c和\cL。   \n 匹配一个换行符。等价于\x0a和\c">
+<meta name="keywords" content="学习,正则,Regex">
 <meta property="og:type" content="article">
-<meta property="og:title" content="NipGeihou Blog">
+<meta property="og:title" content="【学习】正则表达式">
 <meta property="og:url" content="https://NipGeihou.com/Regex/index.html">
 <meta property="og:site_name" content="NipGeihou Blog">
-<meta property="og:description" content="nihao">
+<meta property="og:description" content="中文：正则表达式 英文：Regular Expression，Regex，Regexp 常见匹配规则    字符语法 说明     \d 匹配一个数字字符。等价于[0-9]。grep 要加上-P，perl正则支持   \D 匹配一个非数字字符。等价于[^0-9]。grep要加上-P，perl正则支持   \f 匹配一个换页符。等价于\x0c和\cL。   \n 匹配一个换行符。等价于\x0a和\c">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-22T14:43:45.565Z">
+<meta property="og:updated_time" content="2019-01-22T16:40:40.207Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="NipGeihou Blog">
-<meta name="twitter:description" content="nihao">
+<meta name="twitter:title" content="【学习】正则表达式">
+<meta name="twitter:description" content="中文：正则表达式 英文：Regular Expression，Regex，Regexp 常见匹配规则    字符语法 说明     \d 匹配一个数字字符。等价于[0-9]。grep 要加上-P，perl正则支持   \D 匹配一个非数字字符。等价于[^0-9]。grep要加上-P，perl正则支持   \f 匹配一个换页符。等价于\x0c和\cL。   \n 匹配一个换行符。等价于\x0a和\c">
 
 
 
@@ -150,7 +151,7 @@
   };
 </script>
 
-  <title> | NipGeihou Blog</title>
+  <title>【学习】正则表达式 | NipGeihou Blog</title>
   
 
 
@@ -277,7 +278,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">36</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">39</span></a>
 
   </li>
         
@@ -296,7 +297,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">9</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">10</span></a>
 
   </li>
         
@@ -415,7 +416,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">【学习】正则表达式
               
             
           </h1>
@@ -441,7 +442,7 @@
                 
               
 
-              <time title="创建时间：2019-01-22 20:37:12 / 修改时间：22:43:45" itemprop="dateCreated datePublished" datetime="2019-01-22T20:37:12+08:00">2019-01-22</time>
+              <time title="创建时间：2019-01-23 00:22:41 / 修改时间：00:40:40" itemprop="dateCreated datePublished" datetime="2019-01-23T00:22:41+08:00">2019-01-23</time>
             
 
             
@@ -485,7 +486,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">5</span>
+                <span title="本文字数">467</span>
               
 
               
@@ -519,7 +520,64 @@
       
 
       
-        <h1 id="nihao"><a href="#nihao" class="headerlink" title="nihao"></a>nihao</h1>
+        <p><strong>中文</strong>：正则表达式</p>
+<p><strong>英文</strong>：Regular Expression，Regex，Regexp</p>
+<p>常见匹配规则</p>
+<table>
+<thead>
+<tr>
+<th>字符语法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\d</td>
+<td>匹配一个数字字符。等价于[0-9]。grep 要加上-P，perl正则支持</td>
+</tr>
+<tr>
+<td>\D</td>
+<td>匹配一个非数字字符。等价于[^0-9]。grep要加上-P，perl正则支持</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>匹配一个换页符。等价于\x0c和\cL。</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>匹配一个换行符。等价于\x0a和\cJ。</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>匹配一个回车符。等价于\x0d和\cM。</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>匹配任何不可见字符，包括空格、制表符、换页符等等。等价于[ \f\n\r\t\v]。</td>
+</tr>
+<tr>
+<td>\S</td>
+<td>匹配任何可见字符。等价于[^ \f\n\r\t\v]。</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>匹配一个制表符。等价于\x09和\cI。</td>
+</tr>
+<tr>
+<td>\v</td>
+<td>匹配一个垂直制表符。等价于\x0b和\cK。</td>
+</tr>
+<tr>
+<td>\w</td>
+<td>匹配包括下划线的任何单词字符。类似但不等价于“[A-Za-z0-9_]”，这里的”单词”字符使用Unicode字符集。</td>
+</tr>
+<tr>
+<td>\W</td>
+<td>匹配任何非单词字符。等价于“[^A-Za-z0-9_]”。</td>
+</tr>
+</tbody>
+</table>
+
       
     </div>
 
@@ -552,7 +610,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://NipGeihou.com/Regex/">https://NipGeihou.com/Regex/</a>
+    <a href="https://NipGeihou.com/Regex/" title="【学习】正则表达式">https://NipGeihou.com/Regex/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -563,6 +621,16 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/学习/" rel="tag"><i class="fa fa-tag"></i> 学习</a>
+          
+            <a href="/tags/正则/" rel="tag"><i class="fa fa-tag"></i> 正则</a>
+          
+            <a href="/tags/Regex/" rel="tag"><i class="fa fa-tag"></i> Regex</a>
+          
+        </div>
+      
 
       
       
@@ -572,8 +640,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/problem/javapackaging1/" rel="next" title="【JAVA】简陋打包项目+环境">
-                <i class="fa fa-chevron-left"></i> 【JAVA】简陋打包项目+环境
+              <a href="/vscode_Snippets_markdowm/" rel="next" title="【VScode】使用Snippets（用户代码片段）使Markdown文件快速生成代码">
+                <i class="fa fa-chevron-left"></i> 【VScode】使用Snippets（用户代码片段）使Markdown文件快速生成代码
               </a>
             
           </div>
@@ -581,10 +649,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/vscode_Snippets_markdowm/" rel="prev" title="【VScode】使用Snippets（用户代码片段）使Markdown文件快速生成代码">
-                【VScode】使用Snippets（用户代码片段）使Markdown文件快速生成代码 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -632,17 +696,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -692,7 +747,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">9</span>
+                      
+                    
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -777,7 +834,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">35</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">38</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -871,22 +934,6 @@
       </section>
 
       
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#nihao"><span class="nav-number">1.</span> <span class="nav-text">nihao</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
-      
 
       
 
@@ -914,7 +961,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">30k</span>
+    <span title="站点总字数">31k</span>
   
 
   
@@ -925,7 +972,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">55 分钟</span>
+    <span title="站点阅读时长">56 分钟</span>
   
 </div>
 
