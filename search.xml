@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[【Android】Android APK反编译JAVA代码]]></title>
+    <url>%2Ftutorial%2FAndroidDecompiled%20_luyten%2F</url>
+    <content type="text"><![CDATA[出于学习的目的，参考、借鉴、学习优秀开发者的代码，提高自我开发水平，便有捣腾起了，以前初中时候，略微接触过的安卓（Android）反编译，不过那时候仅仅是更换下图标、壁纸…再用幸运破解器破解安装回手机，而如今则稍微高一点点层次，反编译apk的源代码，本文大部分内容跟网上及参考文章内容相似，主要不同为最后查看反编译的jar文件一步。 准备软件 apktool 获取apk资源文件（图片、XML） dex2jar 获取反编译的apk的jar Luyten 查看反编译得到的jar文件里的源代码下载 apktool 点击下载最新版即可 dex2jar 点击下载最新版即可 Luyten 如果你和我一样，目前系统JDK环境为JAVA 11或者是8（1.8）以上的版本，我建议你下载jar文件的，因为Luyten目前只支持到jdk 1.8。 获取apk资源文件（图片、XML）将刚刚下载的三个文件以及要反编译的apk文件放到一个文件夹下，方便整理，并将压缩包解压。 在放置apktool_2.3.4.jar的文件夹下，按住Shift+右击——点击在此处打开Powershell窗口（S）（也可能是CMD窗口），输入 1java -jar apktool_2.3.4.jar d -f cloud189_v7.3.0.apk -o cloud189 其中apktool_2.3.4.jar为你下载的apktool文件名，cloud189_v7.3.0.apk为你要反编译的apk文件名，cloud189为反编译的文件安放的文件夹，目录在apktool_2.3.4.jar同目录下。 生成的文件和文件夹当中，我们关心的是【res】文件夹中和AndroidManifest.xml文件，打开res文件夹，里面就有我们想要看到的东西了（参考文章原文） 由于这些反编译的xml、图片资源暂时对我而言，不是我想要的，因此并没有过多的研究。 获取反编译的apk的Java源代码解压apk 有一些解压工具是可以直接解压apk的，如果不行，就先将apk的后缀.apk改成.zip再解压。 找到classes.dex文件，可能不止一个 提取jar进入解压了的dex2jar文件夹，找到d2j-dex2jar.bat，将classes.dex文件复制到该目录下 在该目录下按住Shift+右击——点击在此处打开Powershell窗口（S）（也可能是CMD窗口），输入 .\d2j-dex2jar.bat classes.dex 有多个dex文件，则分别反编译 就得到反编译的jar文件，我们需要一个工具是查看这些jar里的代码 查看jar代码很多教程都讲到jd-gui这个软件，但这个软件15年至今已多年没更新，仅支持到jdk 1.7，如果你和我一样，使用更高版本的jdk，则打不开。 这里我推荐Luyten，当然他并不是说支持所有高版本的jdk，他目前也只是支持到1.8，但这也比1.7稍微好一点。 JDK 1.8 下载好JDK 1.8并安装好后，并不需要去配置环境，找到JDK 1.8的bin目录，找到java.exe，在该目录下打开powershell，输入 .\java -jar C:\Users\NipGeihou\Desktop\luyten-0.5.3.jar jar路径以实际为准 最后发现，安装了1.8版本的JDK后，直接可以双击jar文件即可打开，不用执行命令也可以。 最后打开jar文件即可 参考文章：APK反编译 - Android小码农的博客 - CSDN博客]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
+      <tags>
+        <tag>Android</tag>
+        <tag>反编译</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[【正则表达式】最短匹配与最长匹配]]></title>
     <url>%2FRegex_shortestmatch%2F</url>
     <content type="text"><![CDATA[在使用正则表达式匹配HTML源代码时，遇到这么一个问题 123&lt;td&gt;[ 网络]&lt;spantitle="xxxx"&gt;xxxxx，...&lt;/span&gt;&lt;/td&gt;&lt;!--&lt;td&gt;xxx/xxx--&gt;&lt;!--/xxx--&gt;&lt;!--&lt;/td&gt;--&gt;&lt;td&gt;xxx&lt;/td&gt;&lt;td&gt;2019-01-1414: 36&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt; 我想匹配的结果是： 123&lt;td&gt;[ 网络]&lt;spantitle="xxxx"&gt;xxxxx，...&lt;/span&gt;&lt;/td&gt; 正则表达式&lt;td&gt;\[\s*网络\s*\].+&lt;/td&gt; 得到的结果却是： 123&lt;td&gt;[ 网络]&lt;spantitle="xxxx"&gt;xxxxx，...&lt;/span&gt;&lt;/td&gt;&lt;!--&lt;td&gt;xxx/xxx--&gt;&lt;!--/xxx--&gt;&lt;!--&lt;/td&gt;--&gt;&lt;td&gt;xxx&lt;/td&gt;&lt;td&gt;2019-01-1414: 36&lt;/td&gt;&lt;td&gt;&lt;/td&gt; 解决办法很简单，只需要.*后面加?，也就是&lt;td&gt;\[\s*网络\s*\].+?&lt;/td&gt; 123&lt;td&gt;[ 网络]&lt;spantitle="xxxx"&gt;xxxxx，...&lt;/span&gt;&lt;/td&gt; *、+限定符都是贪婪的，因为它们会尽可能多的匹配文字，只有在它们的后面加上一个?就可以实现非贪婪或最小匹配。 参考文章： Python 正则表达式尽可能小的匹配（遇到第一个结束字符串就停止匹配）-昊天SEO 正则表达式的最短与最长匹配 - 关于代码的那点事儿… - CSDN博客 正则表达式 – 语法 | 菜鸟教程]]></content>
