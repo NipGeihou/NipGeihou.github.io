@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[【Java】HttpClient使用代理访问网络]]></title>
+    <url>%2Fproblem%2FJavaUSESproxiestoaccessthenetwork%2F</url>
+    <content type="text"><![CDATA[在开发过程用，程序可能需要向国外网站发送请求响应，但由于某些原因，我们无法正常访问，这时我们需要代理上网，但如果只开启在系统开启纸飞机R，程序依然不能正常访问，在网上查阅相关资料后，得知有两种方式去实现：一是在IDE上设置代理，这种仅适用于，在程序开发时无法访问，而程序最终运行环境（境外服务器）能够正常访问的情况；二是将代理上网写在程序中，这样程序最终运行环境不能正常访问也可以，而我是第二种情况。 我使用的是Apache的HttpClient类和纸飞机R，尝试过System.setProperty(&quot;proxyHost&quot;, &quot;127.0.0.1&quot;);System.setProperty(&quot;proxyPort&quot;, &quot;1080&quot;);似乎不起作用，查阅到参考文章后，发现博主也有与我类似的情况，最后使用RoutePlanner类成功代理上网。 实际操作开启纸飞机R 具体操作，网上很多，就不再赘述了，能够正常代理上网即可 设置代理服务器 纸飞机R默认已经开启1080端的代理服务器，如有特殊需要，可以在选项设置里设置 Java代码正常使用HttpClient类时，应该如下开头 123CloseableHttpClient httpclient = HttpClients.createDefault();HttpGet httpGet = new HttpGet(url);//... 如果需要用代理上网则需要CloseableHttpClient httpclient = HttpClients.createDefault();注释掉或删除 123456789HttpHost proxy = new HttpHost("127.0.0.1", 1080, "HTTP"); DefaultProxyRoutePlanner routePlanner = new DefaultProxyRoutePlanner(proxy); CloseableHttpClient httpclient = HttpClients.custom() .setRoutePlanner(routePlanner) .build();//改为上方代码HttpGet httpGet = new HttpGet(url);//... 注意：代理https也是使用HttpHost proxy = new HttpHost(&quot;127.0.0.1&quot;, 1080, &quot;HTTP&quot;);，而无需将HTTP改成HTTPS 参考文章：java代理设置 | Donny的技术博客]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>HttpClient</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[【教程】使用ffmpeg将HTML加密的m3u8视频下载到本地]]></title>
     <url>%2Ftutorial%2FEncryptHTMLvideodownload%2F</url>
     <content type="text"><![CDATA[有时候，可能晚上断网，但热爱学习我们，一心想着学习，但购买的付费学习视频，又不能下载到本地，只能在线观看，然而断网又让我们不能愉快的学习，作为一名热爱学习的农民工，怎么可能就此妥协。 另外，本教程仅针对原本已付费，且能正常观看在线观看视频的情况，想吃免费的午餐那还得问人借个能满足前面讲到的号操作。 软件下载Windows版 官网 Github FFmpeg可在Windows、Linux还有Mac OS等多种操作系统中进行安装和使用，这里只讲Windows下的，如有不同需求，可查阅参考文章或自行搜索。 FFmpeg分为3个版本：Static、 Shared、 Dev 前两个版本可以直接在命令行中使用。包含了三个exe:ffmpeg.exe，ffplay.exe，ffprobe.exe Static版本中的exe体积较大,那是因为相关的Dll都已经编译进exe里面去了。 Shared版本中exe的体积相对小很多,是因为它们运行的时候还需要到相关的dll中调用相应的功能 Dev版本用于开发,里面包含了库文件xxx.lib以及头文件xxx.h 我使用的是Static 抓包视频m3u8文件 建议使用chrome浏览器或其内核浏览器 在浏览器打开你在线播放视频的网页，并登录好你的账号，确保能正常播放 F12或打开开发者工具，点击Network，勾选Preserve log（刷新页面时，抓包日志也不会清空） 根据右边教程，导入证书，才可抓取https（加密） 图解如何设置Fiddler抓取https_百度经验 刷新网页，选择清晰度，观看一小段视频，过程中开发者工具不要关闭，并保持在Network。 找到m3u8文件 一般选最底下那一个m3u8文件 可以选择下载下来，或者记录Request URL：后的URL，等会下载的时候会用到 下载视频在ffmpeg目录下的bin文件夹，打开powershell或cmd 输入 1.\ffmpeg -i "m3u8文件的路径" -vcodec copy -acodec copy -absf aac_adtstoasc 输出文件名.mp4 #回车 此时ffmpeg会通过m3u8里的key，下载所有片段，最后合成输出输出文件名.mp4到bin文件夹下 下载好后如下提示 总结 ffmpeg是一个十分强大的软件，除了可以下载加密m3u8视频外，还可以对视频文件加密成m3u8视频…感兴趣的朋友可以深入了解下，本教程也适用于不加密的m3u8视频的下载。 .\ffmpeg -h查看帮助，获取更多ffmpeg命令 参考文章： ffmpeg 直接将m3u8转成mp4 - linux的专栏 - CSDN博客 FFmpeg的使用 - 简书 m3u8文件解密，ts 解密 求帮忙下 - 『悬赏问答区』 - 吾爱破解]]></content>
