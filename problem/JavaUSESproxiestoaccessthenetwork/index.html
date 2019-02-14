@@ -132,7 +132,7 @@
 <meta property="og:description" content="在开发过程用，程序可能需要向国外网站发送请求响应，但由于某些原因，我们无法正常访问，这时我们需要代理上网，但如果只开启在系统开启纸飞机R，程序依然不能正常访问，在网上查阅相关资料后，得知有两种方式去实现：一是在IDE上设置代理，这种仅适用于，在程序开发时无法访问，而程序最终运行环境（境外服务器）能够正常访问的情况；二是将代理上网写在程序中，这样程序最终运行环境不能正常访问也可以，而我是第二种">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/9d96ed4cgy1fzt4mlf62sj20he0ejmxj.jpg">
-<meta property="og:updated_time" content="2019-02-03T04:39:59.732Z">
+<meta property="og:updated_time" content="2019-02-03T04:45:46.517Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【Java】HttpClient使用代理访问网络">
 <meta name="twitter:description" content="在开发过程用，程序可能需要向国外网站发送请求响应，但由于某些原因，我们无法正常访问，这时我们需要代理上网，但如果只开启在系统开启纸飞机R，程序依然不能正常访问，在网上查阅相关资料后，得知有两种方式去实现：一是在IDE上设置代理，这种仅适用于，在程序开发时无法访问，而程序最终运行环境（境外服务器）能够正常访问的情况；二是将代理上网写在程序中，这样程序最终运行环境不能正常访问也可以，而我是第二种">
@@ -318,7 +318,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">25</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">26</span></a>
 
   </li>
 
@@ -444,7 +444,7 @@
                 
               
 
-              <time title="创建时间：2019-02-03 12:07:40 / 修改时间：12:39:59" itemprop="dateCreated datePublished" datetime="2019-02-03T12:07:40+08:00">2019-02-03</time>
+              <time title="创建时间：2019-02-03 12:07:40 / 修改时间：12:45:46" itemprop="dateCreated datePublished" datetime="2019-02-03T12:07:40+08:00">2019-02-03</time>
             
 
             
@@ -532,7 +532,7 @@
 <h3 id="Java代码"><a href="#Java代码" class="headerlink" title="Java代码"></a>Java代码</h3><p>正常使用HttpClient类时，应该如下开头</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CloseableHttpClient httpclient = HttpClients.createDefault();</span><br><span class="line">HttpGet httpGet = <span class="keyword">new</span> HttpGet(url);</span><br><span class="line"><span class="comment">//...</span></span><br></pre></td></tr></table></figure>
 <p>如果需要用代理上网则需要<code>CloseableHttpClient httpclient = HttpClients.createDefault();</code>注释掉或删除</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">HttpHost proxy = <span class="keyword">new</span> HttpHost(<span class="string">"127.0.0.1"</span>, <span class="number">1080</span>, <span class="string">"HTTP"</span>);</span><br><span class="line">		DefaultProxyRoutePlanner routePlanner = <span class="keyword">new</span> DefaultProxyRoutePlanner(proxy); </span><br><span class="line">		CloseableHttpClient httpclient = HttpClients.custom()</span><br><span class="line">		        .setRoutePlanner(routePlanner)</span><br><span class="line">		        .build();</span><br><span class="line"></span><br><span class="line"><span class="comment">//改为上方代码</span></span><br><span class="line">HttpGet httpGet = <span class="keyword">new</span> HttpGet(url);</span><br><span class="line"><span class="comment">//...</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">HttpHost proxy = <span class="keyword">new</span> HttpHost(<span class="string">"127.0.0.1"</span>, <span class="number">1080</span>, <span class="string">"HTTP"</span>);</span><br><span class="line">DefaultProxyRoutePlanner routePlanner = <span class="keyword">new</span> DefaultProxyRoutePlanner(proxy); </span><br><span class="line">CloseableHttpClient httpclient = HttpClients.custom()</span><br><span class="line">		        .setRoutePlanner(routePlanner)</span><br><span class="line">		        .build();</span><br><span class="line"></span><br><span class="line"><span class="comment">//改为上方代码</span></span><br><span class="line">HttpGet httpGet = <span class="keyword">new</span> HttpGet(url);</span><br><span class="line"><span class="comment">//...</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>注意：代理https也是使用<code>HttpHost proxy = new HttpHost(&quot;127.0.0.1&quot;, 1080, &quot;HTTP&quot;);</code>，而无需将<code>HTTP</code>改成<code>HTTPS</code></p>
 </blockquote>
@@ -607,6 +607,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/problem/TypeConversion/" rel="prev" title="【Java】常见类型转换">
+                【Java】常见类型转换 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -683,7 +687,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">25</span>
+                    <span class="site-state-item-count">26</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -968,7 +972,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">40k</span>
+    <span title="站点总字数">41k</span>
   
 
   

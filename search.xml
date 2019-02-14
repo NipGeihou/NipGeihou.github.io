@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[【Java】常见类型转换]]></title>
+    <url>%2Fproblem%2FTypeConversion%2F</url>
+    <content type="text"><![CDATA[StringDouble： Double.parseDouble(str);]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[【Java】HttpClient使用代理访问网络]]></title>
     <url>%2Fproblem%2FJavaUSESproxiestoaccessthenetwork%2F</url>
-    <content type="text"><![CDATA[在开发过程用，程序可能需要向国外网站发送请求响应，但由于某些原因，我们无法正常访问，这时我们需要代理上网，但如果只开启在系统开启纸飞机R，程序依然不能正常访问，在网上查阅相关资料后，得知有两种方式去实现：一是在IDE上设置代理，这种仅适用于，在程序开发时无法访问，而程序最终运行环境（境外服务器）能够正常访问的情况；二是将代理上网写在程序中，这样程序最终运行环境不能正常访问也可以，而我是第二种情况。 我使用的是Apache的HttpClient类和纸飞机R，尝试过System.setProperty(&quot;proxyHost&quot;, &quot;127.0.0.1&quot;);System.setProperty(&quot;proxyPort&quot;, &quot;1080&quot;);似乎不起作用，查阅到参考文章后，发现博主也有与我类似的情况，最后使用RoutePlanner类成功代理上网。 实际操作开启纸飞机R 具体操作，网上很多，就不再赘述了，能够正常代理上网即可 设置代理服务器 纸飞机R默认已经开启1080端的代理服务器，如有特殊需要，可以在选项设置里设置 Java代码正常使用HttpClient类时，应该如下开头 123CloseableHttpClient httpclient = HttpClients.createDefault();HttpGet httpGet = new HttpGet(url);//... 如果需要用代理上网则需要CloseableHttpClient httpclient = HttpClients.createDefault();注释掉或删除 123456789HttpHost proxy = new HttpHost("127.0.0.1", 1080, "HTTP"); DefaultProxyRoutePlanner routePlanner = new DefaultProxyRoutePlanner(proxy); CloseableHttpClient httpclient = HttpClients.custom() .setRoutePlanner(routePlanner) .build();//改为上方代码HttpGet httpGet = new HttpGet(url);//... 注意：代理https也是使用HttpHost proxy = new HttpHost(&quot;127.0.0.1&quot;, 1080, &quot;HTTP&quot;);，而无需将HTTP改成HTTPS 参考文章：java代理设置 | Donny的技术博客]]></content>
+    <content type="text"><![CDATA[在开发过程用，程序可能需要向国外网站发送请求响应，但由于某些原因，我们无法正常访问，这时我们需要代理上网，但如果只开启在系统开启纸飞机R，程序依然不能正常访问，在网上查阅相关资料后，得知有两种方式去实现：一是在IDE上设置代理，这种仅适用于，在程序开发时无法访问，而程序最终运行环境（境外服务器）能够正常访问的情况；二是将代理上网写在程序中，这样程序最终运行环境不能正常访问也可以，而我是第二种情况。 我使用的是Apache的HttpClient类和纸飞机R，尝试过System.setProperty(&quot;proxyHost&quot;, &quot;127.0.0.1&quot;);System.setProperty(&quot;proxyPort&quot;, &quot;1080&quot;);似乎不起作用，查阅到参考文章后，发现博主也有与我类似的情况，最后使用RoutePlanner类成功代理上网。 实际操作开启纸飞机R 具体操作，网上很多，就不再赘述了，能够正常代理上网即可 设置代理服务器 纸飞机R默认已经开启1080端的代理服务器，如有特殊需要，可以在选项设置里设置 Java代码正常使用HttpClient类时，应该如下开头 123CloseableHttpClient httpclient = HttpClients.createDefault();HttpGet httpGet = new HttpGet(url);//... 如果需要用代理上网则需要CloseableHttpClient httpclient = HttpClients.createDefault();注释掉或删除 123456789HttpHost proxy = new HttpHost("127.0.0.1", 1080, "HTTP");DefaultProxyRoutePlanner routePlanner = new DefaultProxyRoutePlanner(proxy); CloseableHttpClient httpclient = HttpClients.custom() .setRoutePlanner(routePlanner) .build();//改为上方代码HttpGet httpGet = new HttpGet(url);//... 注意：代理https也是使用HttpHost proxy = new HttpHost(&quot;127.0.0.1&quot;, 1080, &quot;HTTP&quot;);，而无需将HTTP改成HTTPS 参考文章：java代理设置 | Donny的技术博客]]></content>
       <categories>
         <category>Java</category>
       </categories>
