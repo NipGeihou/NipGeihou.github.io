@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[【Java】常见类型转换]]></title>
     <url>%2Fproblem%2FTypeConversion%2F</url>
-    <content type="text"><![CDATA[StringDouble： Double.parseDouble(str);]]></content>
+    <content type="text"><![CDATA[StringDouble： Double.parseDouble(str); DoubleString String.valueOf(double)]]></content>
       <categories>
         <category>Java</category>
       </categories>
