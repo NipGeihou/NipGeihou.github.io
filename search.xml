@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[【Hexo】修改文章中照片尺寸宽度]]></title>
+    <url>%2FHexo%2Fhexo_max_width%2F</url>
+    <content type="text"><![CDATA[默认情况下，Hexo的Next主题，文章中的照片宽度都是文章区域宽度的100%，像我上一个教程文章中，手机屏幕的截图，看起来就十分糟糕了，如果不使用原图可能会好些，但不使用原图，在某些图片中可能会看不清小字。 当然我们可以通过在编写文字的时，使用&lt;img&gt;元素添加图片并设置其大小，但这非常的繁琐，这并不是我们想要的，而我们可以通过修改覆盖原有的CSS样式，从而实现批量调整图片的尺寸。 通过使用浏览器开发者工具，添加了一条css样式，即可调整图片的大小，这里我调成最大宽度50%，当然这可能并不是一个理想的值，但我们有了思路，慢慢调整数值便是。 123.main img &#123; max-width: 50%;&#125; 实现 上面讲到的，只是一些思路上的东西，那么现在讲讲实际操作 将css代码添加到Hexo根目录\themes\next\source\css\main.styl（如果你不是next主题，那就将next改成你的主题文件夹名） 123.main img &#123; max-width: 50%;&#125; 保存，重新编译、部署即可。]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[【IOS越狱插件】GestureX 全面屏手势安装]]></title>
     <url>%2Fproblem%2FGestureX%2F</url>
     <content type="text"><![CDATA[如果还没越狱的老哥，请先移步【IOS】IOS12.1 unc0ver不完美越狱教程及心得 添加源 越狱之后，先添加全面屏手势插件GestureX的作者Cydia源：http://zlxdike.github.io/repo/ 软件源——编辑——添加——输入http://zlxdike.github.io/repo/——添加源 回到软件源，点击zlxdike&#39;s Repo——全部软件包——GestureX——更改——安装——重启SpringBoard 设置——GestureX——进入GestureX设置，按需求设置，设置好后点击注销]]></content>
@@ -15,7 +26,7 @@
   <entry>
     <title><![CDATA[【IOS】IOS12.1 unc0ver不完美越狱教程及心得]]></title>
     <url>%2Fproblem%2Func0ver_ios12.1%2F</url>
-    <content type="text"><![CDATA[IOS12的系统功能完善，远好远IOS7以前了，其实对于越狱，原本我是不太感冒的，但在刷论坛的时候，总能看到别人发，越狱后在iPhone X以前的手机使用全面屏手势的截图，经不住诱惑，心动了。 越狱 这一次的不完美越狱，过程十分简单，甚至电脑都不用连接即可，当然这是在不出意外的情况下。 不出意外的情况下，应该是这样子的Safari浏览器输入ignition.fun 这里我选择的是Install Now（App），下载ignition 然后在ignition里搜索unc0ver，我下载的是 Unc0ver-new beta 信任后，打开unc0ver，点击Jailbreak（因为我的已经越狱了，所以显示的是Re-Jailbreak） 等待操作，根据提示点击OK重启，重启后桌面多一个Cydia则成功越狱。 越狱心得报错：Description: RootFS already mounted, delete OTA file from Settings - Storageif present and reboot. 实际操作中，并没有这么理想，其中下图这个问题就困扰了我一会 打开unc0ver——Settings——Clean Diagnostics Data（清除诊断数据），unc0ver可能会崩溃，重新打开并继续下一步 将除restore rootFS外的，所有选项取消选中，再回到Jailbreak（即首页），点击Jailbreak，等待操作，等待操作完毕，可能依旧报错，点击OK即可 设置——通用——软件更新——下载并安装，放心点击，在下载好后，还需要再次确认才会真正更新。 等待下载完毕后（不需要进度条跑满），进度条下方显示安装前准备字样时，进入设置——通用——IPhone 存储空间，找到IOS12.x.x的更新包，删除 删除unc0ver，再次安装，开启科学上网，再次点击越狱，重启后桌面出现Cydia为之成功（可能需要多次重启尝试） 参考文章：[Tutorial] Solution for “rootFS already mounted” error in unc0ver 使用ignition.fun安装unc0ver提示无效 如果使用Use Now（Web），会提示无效，如使用我教程中的Install Now（App）则没有这个问题。 完成越狱后，不妨体验下GestureX全面屏手势（X及以上用户无视）]]></content>
+    <content type="text"><![CDATA[IOS12的系统功能完善，远好于IOS7以前了，其实对于越狱，原本我是不太感冒的，但在刷论坛的时候，总能看到别人发，越狱后在iPhone X以前的手机使用全面屏手势的截图，经不住诱惑，心动了。 越狱 这一次的不完美越狱，过程十分简单，甚至电脑都不用连接即可，当然这是在不出意外的情况下。 不出意外的情况下，应该是这样子的Safari浏览器输入ignition.fun 这里我选择的是Install Now（App），下载ignition 然后在ignition里搜索unc0ver，我下载的是 Unc0ver-new beta 信任后，打开unc0ver，点击Jailbreak（因为我的已经越狱了，所以显示的是Re-Jailbreak） 等待操作，根据提示点击OK重启，重启后桌面多一个Cydia则成功越狱。 越狱心得报错：Description: RootFS already mounted, delete OTA file from Settings - Storageif present and reboot. 实际操作中，并没有这么理想，其中下图这个问题就困扰了我一会 打开unc0ver——Settings——Clean Diagnostics Data（清除诊断数据），unc0ver可能会崩溃，重新打开并继续下一步 将除restore rootFS外的，所有选项取消选中，再回到Jailbreak（即首页），点击Jailbreak，等待操作，等待操作完毕，可能依旧报错，点击OK即可 设置——通用——软件更新——下载并安装，放心点击，在下载好后，还需要再次确认才会真正更新。 等待下载完毕后（不需要进度条跑满），进度条下方显示安装前准备字样时，进入设置——通用——IPhone 存储空间，找到IOS12.x.x的更新包，删除 删除unc0ver，再次安装，开启科学上网，再次点击越狱，重启后桌面出现Cydia为之成功（可能需要多次重启尝试） 参考文章：[Tutorial] Solution for “rootFS already mounted” error in unc0ver 使用ignition.fun安装unc0ver提示无效 如果使用Use Now（Web），会提示无效，如使用我教程中的Install Now（App）则没有这个问题。 完成越狱后，不妨体验下GestureX全面屏手势（X及以上用户无视）]]></content>
       <categories>
         <category>IOS</category>
       </categories>
@@ -222,7 +233,7 @@
   </entry>
   <entry>
     <title><![CDATA[【Hexo】使用PlantUML插件画UML图]]></title>
-    <url>%2Fhexo_uml%2F</url>
+    <url>%2FHexo%2Fhexo_uml%2F</url>
     <content type="text"><![CDATA[0. 安装插件1npm install hexo-tag-plantuml --save 1. 语法顺序图（Sequence Diagram）1234567&#123;% plantuml %&#125; Alice -&gt; Bob: Authentication Request Bob --&gt; Alice: Authentication Response Alice -&gt; Bob: Another atuhentication Request Alice &lt;-- Bob: Another authentication Response&#123;% endplantuml %&#125; 效果： 用例图（Use Case Diagram）12345678&#123;% plantuml %&#125; @startuml (Usecase One) (Usecase Two) as (UC2) usecase UC3 usecase (Last\nusecase) as UC4 @enduml&#123;% endplantuml %&#125; 效果： 类图（Class Diagram）123456789&#123;% plantuml %&#125; @startuml Class01 &lt;|-- Class02 Class03 *-- Class04 Class05 o-- Class06 Class07 .. Class08 Class09 -- Class10 @enduml&#123;% endplantuml %&#125; 效果： 活动图（Activity Diagram）123456&#123;% plantuml %&#125; (*) -up-&gt; "First Activity" -right-&gt; "Second Activity" --&gt; "Third Activity" -left-&gt; (*)&#123;% endplantuml %&#125; 效果： 更详细的语法说明请到官网查看 在Hexo上使用，则将标准语法放置在plantuml标签中即可： 123&#123;% plantuml %&#125; 语法&#123;% endplantuml %&#125; 参考文章：《在hexo中使用PlantUML来画UML》、《plantuml使用教程【转】》]]></content>
       <categories>
         <category>Hexo</category>
@@ -233,7 +244,7 @@
   </entry>
   <entry>
     <title><![CDATA[【Hexo】放置自己的独立网页，生成不被删除]]></title>
-    <url>%2Fhexo_staticpage%2F</url>
+    <url>%2FHexo%2Fhexo_staticpage%2F</url>
     <content type="text"><![CDATA[将Hexo部署到GitHub时，执行hexo d -g，会先生成静态网页文件到public文件夹，然后将public的文件部署到GitHub上。 正常情况下，Hexo会将source文件夹下的文件夹的Markdown文件编译生成带有主题样式的HTML文件，如果需要一个独立的静态网站则需要如下配置： 在站点的_config.yml添加： 123skip_render: - 'test1/**' - 'test2/**' 在/source中放置的网页目录 在文件夹中放置你的index.html、css等文件 再次执行hexo d -g，部署到GitHub 输入域名/文件夹名即可访问 参考文章：Hexo渲染时排除部分文件或目录、hexo 添加自定义页面（转）]]></content>
       <categories>
         <category>Hexo</category>
@@ -271,7 +282,7 @@
   </entry>
   <entry>
     <title><![CDATA[【Hexo】NexT 6.0+ 配置文件解释、插件安装心得]]></title>
-    <url>%2Fhexo-next%2F</url>
+    <url>%2FHexo%2Fhexo-next%2F</url>
     <content type="text"><![CDATA[更新：2019年1月10日 前言我的博客（至2018年11月29日为止）一直使用的Hexo框架，最近又换回了NexT主题，NexT是Hexo里，很有名的一款主题，很多教如何部署Hexo的教程都讲到这款主题，也有很多大佬的博客在使用这款主题。 在使用了这款主题后，我浏览了很多关于这款主题的有关美化、插件的教程，都没能完整满足我的需求，这些教程中也包括了NexT 使用文档 ，当然这里面已经覆盖我大部分想要的答案，或许是内容还没有更新，以至于出现了我在「Hexo 部署遇到的问题与解决方法」讲到的一些NexT 6.0无效配置问题。NexT在配置文件中内置了很多默认是关闭（false）的功能及插件，大部分在NexT 使用文档 中有讲到，有一些是没有的，当然配置文件中基本都是有英文注释解释的，而对于我这种英文盲来讲，还是需要翻译一下才能领会，有些还需要Google下，为此写这篇文章，给大家也给自己翻译、介绍下NexT配置文件中的一些“隐藏”功能。我默认认为你和我一样，已成功搭建Hexo并下载使用着NexT主题（如果没有，网上有很多教程，内容基本覆盖了搭建到安装NexT主题的知识点，NexT6.0可能会遇到跟教程不一样的操作，可以参考我的「Hexo 部署遇到的问题与解决方法」。 设置侧边栏的联系方式（超链接）和图标配置 下面是我当前的配置文件，其中有些默认的联系方式我是没有的，或是暂时不想设置的，不想显示的你可以在代码前#注释掉，也可以直接删掉。 1234567891011121314social: GitHub: https://github.com/NipGeihou || github E-Mail: mailto:NipGeihou@foxmail.com || envelope Weibo: https://weibo.com/2643914060 || weibo #Google: https://plus.google.com/yourname || google #Twitter: https://twitter.com/yourname || twitter #FB Page: https://www.facebook.com/yourname || facebook #VK Group: https://vk.com/yourname || vk #StackOverflow: https://stackoverflow.com/yourname || stack-overflow #YouTube: https://youtube.com/yourname || youtube #Instagram: https://instagram.com/yourname || instagram #Skype: skype:yourname?call|chat || skype File Browser: http://youku.nipgeihou.com:888 || cloud phpMyAdmin: http://youku.nipgeihou.com:82 || database 添加除了E-Mail等一些特殊联系方式外，其他普通超链接以这种格式添加 注意：之间的空格：1显示名称 : 超链接 || 图标名 如：1phpMyAdmin: http://youku.nipgeihou.com:82 || database 其中后面的图标名，Nxet使用的是「Font Awesome」的图标库，有部分是收费的，在搜索时出现的浅色图标就是收费的，你在搜索的时候可以点击左侧的free来筛选免费的图标，找到合适的图标后，复制图标下方的名字，到上面讲到的图标名位置即可。如我的PhpMyAdmin网址，我就找了一个database的图标。 设置代码块颜色主题、代码块无法高亮问题共用5款主题： normal | night | night eighties | night blue | night bright1highlight_theme: night 截图来源：主题配置 - NexT 使用文档 设置好你喜欢的颜色主题后，发现写文章时使用代码块的时候，并不能高亮代码，如： 1234567public class HelloWorld&#123; public static void main(String[] args) &#123; System.out.println( &quot;Hello, World!&quot; ); &#125;&#125; 高亮代码块，需要在上方```后面声明语言，如：java. 声明之后效果： 1234567public class HelloWorld&#123; public static void main(String[] args) &#123; System.out.println( "Hello, World!" ); &#125;&#125; 常见声明类型：java、bash（linux）、yaml、… 关于样式 Hexo说白了就是生成伪动态网页，真正的动态网页应该是你向服务器发送请求的时候，服务器通过你发送的请求，实时生成返回一个网页，而Hexo则是将所有能访问的网页，批量生成了静态网页。 至于样式，Next默认使用的是外链CSS，当然你可以编辑next\source\css里的main.styl，覆盖大部分的原有样式，当然css文件夹里不止main.styl一个文件，具体需要添加覆盖在那个文件里，则善用F12定位元素，查看引用的CSS文件，如main.css?v=6.5.0对应的就是main.styl，以此类推。]]></content>
       <categories>
         <category>Hexo</category>
@@ -287,7 +298,7 @@
   </entry>
   <entry>
     <title><![CDATA[【Hexo】部署遇到的问题与解决方法]]></title>
-    <url>%2Fhexo_deploy%2F</url>
+    <url>%2FHexo%2Fhexo_deploy%2F</url>
     <content type="text"><![CDATA[更新日期：2018年11月28日 hexo命令无效有一段时间没有写博文，（中间Windows 10进行过更新，不知是否与此有关），今天想更新、部署hexo到github，发现我用来一键部署的批处理文件，双击打开后直接闪退，随后我在博客根目录打开powershell，输入hexo如下提示： hexo : 无法将“hexo”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确 ，然后再试一次。 解决方法：在系统变量Path中添加hexo根目录的node_modules\.bin，如我的：D:\Blog\node_modules\.bin; 参考文章：hexo问题 next主题 问题next 6.0 无法配置语言为简体中文在网上常见的几个Next主题配置教程中，教大家配置语言为简体中文的时候，都是将站点配置文件（_config.yml）中的 language后面添加zh-Hans，即： 1language: zh-Hans 但实际操作后，发现是无效的，而这样声明语言，在6.0以下版本是可用的，在6.0版本却不能正常识别。 实测6.0版本应将language声明为 1language: zh-CN next 添加tags（标签）、categories（分类）等标签在hexo根目录，使用PowerShell（不限于）输入：hexo new page &#39;tags&#39; 12PS D:\Blog&gt; hexo new page &apos;tags&apos; # categories（分类）则将tags改为categoriesINFO Created: D:\ 注意：不要在预览状态下，避免出现问题。 执行完命令后，编辑 .\source\tags下的index.md1234---title: tagsdate: 2018-11-28 20:53:25--- 添加type属性：12345---title: tagsdate: 2018-11-28 20:53:25type: tags--- categories（分类）同理，如不添加type属性会造成，无法正常显示该页面。 next 6.0 动态背景无效 进入theme/next目录 执行命令：git clone https://github.com/theme-next/theme-next-canvas-nest source/lib/canvas-nest 主题配置文件_config.yml中的 1canvas_nest: false 改为 1canvas_nest: true 参考文章：NexT v6.0+ 背景动画Canvas_nest设置无效的解决方案 next6.0 添加文章字数，阅读时间 在next的配置文件(_config.yml)中修个为：123456symbols_count_time: separated_meta: true item_text_post: true item_text_total: true awl: 2 #平均字长 wpm: 275 #每分钟字数 中文用户建议设置awl：2和wpm：300，但如果你经常把你的帖子和英语混用，awl：4和wpm：275会更好。 在hexo根目录，执行： 1npm install hexo-symbols-count-time --save （重点）并在站点配置文件(_config.yml)中添加： 12345symbols_count_time: symbols: true time: true total_symbols: true total_time: true 预览、部署 关闭新建页面的评论功能在页面的 Front-matter 里添加 comments 字段，并将值设置为 false。如下所示：12345title: All tagsdate: 2015-12-16 17:05:24type: &quot;tags&quot;comments: false--- 参考文章：常见问题 - NexT 使用文档 Hexo 文章置顶 Hexo根目录下执行： 12npm uninstall hexo-generator-index --savenpm install hexo-generator-index-pin-top --save 在需要置顶的文章的Front-matter中加上top: true。 添加置顶标志，打开：/themes/next/layout/_macro 目录下的post.swig文件，定位到&lt;div class=&quot;post-meta&quot;&gt;标签下，插入如下代码： 12345&#123;% if post.top %&#125; &lt;i class="fa fa-thumb-tack"&gt;&lt;/i&gt; &lt;font color=7D26CD&gt;置顶&lt;/font&gt; &lt;span class="post-meta-divider"&gt;|&lt;/span&gt;&#123;% endif %&#125; 保存，重新部署即可。 参考文章：hexo博客优化之文章置顶+置顶标签 - qwerty200696的博客 - CSDN博客 安装图片放大预览（FancyBox 3）插件 Next支持FancyBox 2 和新版的FancyBox 3，只需要选择一个版本，不需要同时安装两个版本。 如果有此前安装有FancyBox 2，则需要先删除旧版本。在Hexo根目录执行： 1rm -rf themes/next/source/lib/fancybox #删除next主题文件夹下的/source/lib/fancybox 安装FancyBox 3，在next目录下执行 1git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox 安装博客文章搜索1npm install hexo-generator-searchdb --save 将主题配置文件中的local_search:下的enable: false改为enable: true即可，即：123456789local_search: enable: true # if auto, trigger search by changing input # if manual, trigger search by pressing enter key or search button trigger: auto # show top n results per article, show all results by setting to -1 top_n_per_article: 1 # unescape html strings to the readable one unescape: false 文章推荐 hexo的next主题个性化教程：打造炫酷网站 - 距离的博客 - CSDN博客]]></content>
       <categories>
         <category>Hexo</category>
