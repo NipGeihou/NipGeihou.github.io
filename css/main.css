@@ -1990,7 +1990,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2a9e05;
+  background: #ff86be;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3036,6 +3036,9 @@ body {
 }
 .menu a {
   color: #999;
+}
+.main img {
+  max-width: 50%;
 }
 .v .vwrap {
   background-color: #fefefe;
