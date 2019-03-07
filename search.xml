@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[【Hexo】修改文章中照片尺寸宽度]]></title>
+    <title><![CDATA[【Hexo】修改Hexo博客文章中显示的照片尺寸]]></title>
     <url>%2FHexo%2Fhexo_max_width%2F</url>
     <content type="text"><![CDATA[默认情况下，Hexo的Next主题，文章中的照片宽度都是文章区域宽度的100%，像我上一个教程文章中，手机屏幕的截图，看起来就十分糟糕了，如果不使用原图可能会好些，但不使用原图，在某些图片中可能会看不清小字。 当然我们可以通过在编写文字的时，使用&lt;img&gt;元素添加图片并设置其大小，但这非常的繁琐，这并不是我们想要的，而我们可以通过修改覆盖原有的CSS样式，从而实现批量调整图片的尺寸。 通过使用浏览器开发者工具，添加了一条css样式，即可调整图片的大小，这里我调成最大宽度50%，当然这可能并不是一个理想的值，但我们有了思路，慢慢调整数值便是。 123.main img &#123; max-width: 50%;&#125; 实现 上面讲到的，只是一些思路上的东西，那么现在讲讲实际操作 将css代码添加到Hexo根目录\themes\next\source\css\main.styl（如果你不是next主题，那就将next改成你的主题文件夹名） 123.main img &#123; max-width: 50%;&#125; 保存，重新编译、部署即可。]]></content>
       <categories>
