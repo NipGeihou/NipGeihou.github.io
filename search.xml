@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[【IOS越狱插件】GestureX 全面屏手势安装]]></title>
+    <url>%2Fproblem%2FGestureX%2F</url>
+    <content type="text"><![CDATA[如果还没越狱的老哥，请先移步【IOS】IOS12.1 unc0ver不完美越狱教程及心得 添加源 越狱之后，先添加全面屏手势插件GestureX的作者Cydia源：http://zlxdike.github.io/repo/ 软件源——编辑——添加——输入http://zlxdike.github.io/repo/——添加源 回到软件源，点击zlxdike&#39;s Repo——全部软件包——GestureX——更改——安装——重启SpringBoard 设置——GestureX——进入GestureX设置，按需求设置，设置好后点击注销]]></content>
+      <categories>
+        <category>IOS</category>
+      </categories>
+      <tags>
+        <tag>IOS</tag>
+        <tag>GestureX</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[【IOS】IOS12.1 unc0ver不完美越狱教程及心得]]></title>
+    <url>%2Fproblem%2Func0ver_ios12.1%2F</url>
+    <content type="text"><![CDATA[IOS12的系统功能完善，远好远IOS7以前了，其实对于越狱，原本我是不太感冒的，但在刷论坛的时候，总能看到别人发，越狱后在iPhone X以前的手机使用全面屏手势的截图，经不住诱惑，心动了。 越狱 这一次的不完美越狱，过程十分简单，甚至电脑都不用连接即可，当然这是在不出意外的情况下。 不出意外的情况下，应该是这样子的Safari浏览器输入ignition.fun 这里我选择的是Install Now（App），下载ignition 然后在ignition里搜索unc0ver，我下载的是 Unc0ver-new beta 信任后，打开unc0ver，点击Jailbreak（因为我的已经越狱了，所以显示的是Re-Jailbreak） 等待操作，根据提示点击OK重启，重启后桌面多一个Cydia则成功越狱。 越狱心得报错：Description: RootFS already mounted, delete OTA file from Settings - Storageif present and reboot. 实际操作中，并没有这么理想，其中下图这个问题就困扰了我一会 打开unc0ver——Settings——Clean Diagnostics Data（清除诊断数据），unc0ver可能会崩溃，重新打开并继续下一步 将除restore rootFS外的，所有选项取消选中，再回到Jailbreak（即首页），点击Jailbreak，等待操作，等待操作完毕，可能依旧报错，点击OK即可 设置——通用——软件更新——下载并安装，放心点击，在下载好后，还需要再次确认才会真正更新。 等待下载完毕后（不需要进度条跑满），进度条下方显示安装前准备字样时，进入设置——通用——IPhone 存储空间，找到IOS12.x.x的更新包，删除 删除unc0ver，再次安装，开启科学上网，再次点击越狱，重启后桌面出现Cydia为之成功（可能需要多次重启尝试） 参考文章：[Tutorial] Solution for “rootFS already mounted” error in unc0ver 使用ignition.fun安装unc0ver提示无效 如果使用Use Now（Web），会提示无效，如使用我教程中的Install Now（App）则没有这个问题。 完成越狱后，不妨体验下GestureX全面屏手势（X及以上用户无视）]]></content>
+      <categories>
+        <category>IOS</category>
+      </categories>
+      <tags>
+        <tag>IOS</tag>
+        <tag>unc0ver</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[【Java】常见类型转换]]></title>
     <url>%2Fproblem%2FTypeConversion%2F</url>
     <content type="text"><![CDATA[StringDouble： Double.parseDouble(str); DoubleString String.valueOf(double)]]></content>
