@@ -1990,7 +1990,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff86be;
+  background: #30ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2991,7 +2991,7 @@ hr {
 }
 code {
   color: #fff;
-  background: #4cb4e7;
+  background: #4ca4d4;
   margin: 2px;
 }
 .post {
@@ -3044,4 +3044,19 @@ body {
   background-color: #fefefe;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.posts-expand {
+  margin: 0 10px;
+}
+.main {
+  padding-bottom: auto;
+}
+.header-inner {
+  margin-bottom: auto;
+}
+.main-inner {
+  margin-top: 30px;
+}
+.posts-expand .post-title {
+  font-size: 24px;
 }
