@@ -123,30 +123,23 @@
 
 
 
-  <meta name="description" content="在以往安装JAVA JDK的时候，我必然会百度一下，如何配置环境变量，这一次跟以往一样，我在百度随便找了一篇我认为认可的文章，跟着配置Windows的环境变量中遇到的一些问题和我的解决方法。   在文章教程中，讲到需要配置“CLASSPATH”、“Path”中的jre路径变量，但实际安装JAVA 11，JDK根目录下并不存在”jre”文件夹，查阅相关资料后得知：  现在也不再单独发JRE, Se">
-<meta name="keywords" content="JAVA">
-<meta property="og:type" content="article">
-<meta property="og:title" content="【JAVA】JDK11+ Windows10 1809配置开发环境变量「问题心得」">
-<meta property="og:url" content="https://NipGeihou.com/JavaJdkDifficulties/index.html">
+  <meta name="description" content="科技、人文、生活">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NipGeihou Blog">
+<meta property="og:url" content="https://NipGeihou.com/categories/Spring/index.html">
 <meta property="og:site_name" content="NipGeihou Blog">
-<meta property="og:description" content="在以往安装JAVA JDK的时候，我必然会百度一下，如何配置环境变量，这一次跟以往一样，我在百度随便找了一篇我认为认可的文章，跟着配置Windows的环境变量中遇到的一些问题和我的解决方法。   在文章教程中，讲到需要配置“CLASSPATH”、“Path”中的jre路径变量，但实际安装JAVA 11，JDK根目录下并不存在”jre”文件夹，查阅相关资料后得知：  现在也不再单独发JRE, Se">
+<meta property="og:description" content="科技、人文、生活">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw9cmonghoj20ho05xglr.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw9cvq9rusj20ro0ilta8.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw9d0exe40j20hk0iita9.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw9dft7o9tj20gl04d0sr.jpg">
-<meta property="og:updated_time" content="2018-12-17T06:59:14.892Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【JAVA】JDK11+ Windows10 1809配置开发环境变量「问题心得」">
-<meta name="twitter:description" content="在以往安装JAVA JDK的时候，我必然会百度一下，如何配置环境变量，这一次跟以往一样，我在百度随便找了一篇我认为认可的文章，跟着配置Windows的环境变量中遇到的一些问题和我的解决方法。   在文章教程中，讲到需要配置“CLASSPATH”、“Path”中的jre路径变量，但实际安装JAVA 11，JDK根目录下并不存在”jre”文件夹，查阅相关资料后得知：  现在也不再单独发JRE, Se">
-<meta name="twitter:image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw9cmonghoj20ho05xglr.jpg">
+<meta name="twitter:title" content="NipGeihou Blog">
+<meta name="twitter:description" content="科技、人文、生活">
 
 
 
 
 
 
-  <link rel="canonical" href="https://NipGeihou.com/JavaJdkDifficulties/"/>
+  <link rel="canonical" href="https://NipGeihou.com/categories/Spring/"/>
 
 
 
@@ -156,7 +149,7 @@
   };
 </script>
 
-  <title>【JAVA】JDK11+ Windows10 1809配置开发环境变量「问题心得」 | NipGeihou Blog</title>
+  <title>分类: Spring | NipGeihou Blog</title>
   
 
 
@@ -215,7 +208,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -283,14 +276,14 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">50</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">51</span></a>
 
   </li>
         
         
         
           
-          <li class="menu-item menu-item-categories">
+          <li class="menu-item menu-item-categories menu-item-active">
 
     
     
@@ -302,7 +295,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">14</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">15</span></a>
 
   </li>
         
@@ -321,7 +314,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">30</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">31</span></a>
 
   </li>
 
@@ -340,6 +333,25 @@
 
   
     
+
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
 
   
 
@@ -388,274 +400,59 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block category">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>Spring<small>分类</small>
+        </h1>
+      </div>
 
-  
-  
-  
-
-  
+      
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://NipGeihou.com/JavaJdkDifficulties/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="NipGeihou">
-      <meta itemprop="description" content="科技、人文、生活">
-      <meta itemprop="image" content="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fxo22vg947j205k05kt8z.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="NipGeihou Blog">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+            <a class="post-title-link" href="/Java/Spring_1/" itemprop="url">
+              
+                <span itemprop="name">【Spring】Spring初体验心得——注解</span>
+              
+            </a>
         
-          <h1 class="post-title" itemprop="name headline">【JAVA】JDK11+ Windows10 1809配置开发环境变量「问题心得」
-              
-            
-          </h1>
-        
+      </h2>
 
-        <div class="post-meta">
-			
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2018-10-15 23:34:22" itemprop="dateCreated datePublished" datetime="2018-10-15T23:34:22+08:00">2018-10-15</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-12-17 14:59:14" itemprop="dateModified" datetime="2018-12-17T14:59:14+08:00">2018-12-17</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/JavaJdkDifficulties/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/JavaJdkDifficulties/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">676</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">1 分钟</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <blockquote>
-<p>在以往安装JAVA JDK的时候，我必然会百度一下，如何配置环境变量，这一次跟以往一样，我在百度随便找了一篇我认为认可的<a href="https://www.runoob.com/java/java-environment-setup.html#win-install" target="_blank" rel="noopener">文章</a>，跟着配置Windows的环境变量中遇到的一些问题和我的解决方法。</p>
-</blockquote>
-<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw9cmonghoj20ho05xglr.jpg" alt=""></p>
-<p>在文章教程中，讲到需要配置“CLASSPATH”、“Path”中的jre路径变量，但实际安装JAVA 11，JDK根目录下并不存在”jre”文件夹，查阅相关资料后得知：</p>
-<blockquote>
-<p>现在也不再单独发JRE, Server JRE这些小体积版本, 从安装后的文件中可以看到传统分离的JRE和JDK现在已经合并了, Java的编译部分已经可以看成是运行时的一部分了.`</p>
-</blockquote>
-<p>CLASSPATH也不再需要，实测确实如此，那么正确的配置方法应该是：</p>
-<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw9cvq9rusj20ro0ilta8.jpg" alt=""></p>
-<p>1.在【系统变量】-【新建】</p>
-<p>变量名：<code>JAVA_HOME</code><br>变量值：<code>D:\JDK\11</code>（以你实际安装路径为准）</p>
-<hr>
-<p>2.找到变量：Path-编辑<br>添加：<code>%JAVA_HOME%\bin</code>   （或刚刚添加 JAVA_HOME的变量值+”\bin”,比如我的<code>D:\JDK\11\bin</code>）<br>（由于我的电脑不明原因导致，<code>echo %JAVA_HOME%</code>返回并不是<code>D:\JDK\11</code>，只好通过绝对路径添加到Path）</p>
-<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw9d0exe40j20hk0iita9.jpg" alt=""></p>
-<p>至此配置完成，配置环境从原来的4个变量值减少至2个。  </p>
-<p>可以在CMD或PowerShell中输入：</p>
-<p><code>java -version</code> 显示java版本<br><code>javac</code> 运行javac时无效，需要配置JAVA_HOME环境变量<br><code>echo %JAVA_HOME%</code> 返回JAVA_HOME变量值</p>
-<p><img src="https://ws1.sinaimg.cn/mw690/9d96ed4cgy1fw9dft7o9tj20gl04d0sr.jpg" alt=""></p>
-<p>参考文章：<a href="https://blog.csdn.net/qq_42555979/article/details/81139937" title="Java10环境配置无jre问题" target="_blank" rel="noopener">Java10环境配置无jre问题</a></p>
-
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-       
-    
-    
-
-    
-      <div>
-        
-
-
-
-  
-
-
-
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>本文作者： </strong>NipGeihou</li>
-  <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    
-    <a href="https://NipGeihou.com/JavaJdkDifficulties/" title="【JAVA】JDK11+ Windows10 1809配置开发环境变量「问题心得」">https://NipGeihou.com/JavaJdkDifficulties/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
-</ul>
-
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2019-03-24T23:50:50+08:00"
+              content="2019-03-24" >
+          03-24
+        </time>
       </div>
-    
 
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/JAVA/" rel="tag"><i class="fa fa-tag"></i> JAVA</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/gzccc-amnoon/" rel="next" title="【广州城建职业学院】安朗（蓝蝴蝶）拨号客户端安装教程和常见疑难问题">
-                <i class="fa fa-chevron-left"></i> 【广州城建职业学院】安朗（蓝蝴蝶）拨号客户端安装教程和常见疑难问题
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/network/" rel="prev" title="Windows网络故障常用修复方法">
-                Windows网络故障常用修复方法 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
+      
+    </div>
+
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
           
-
-  
-    <div class="comments" id="comments">
-    </div>
-  
-
-
 
         </div>
         
@@ -696,7 +493,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">30</span>
+                    <span class="site-state-item-count">31</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -737,7 +534,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">14</span>
+                      
+                    
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -850,7 +649,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">50</span>
+                      
+                    
+                    <span class="site-state-item-count">51</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -971,7 +772,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">43k</span>
+    <span title="站点总字数">45k</span>
   
 
   
@@ -982,7 +783,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">1:17</span>
+    <span title="站点阅读时长">1:22</span>
   
 </div>
 
@@ -1097,10 +898,6 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
-
-
 
   
 
