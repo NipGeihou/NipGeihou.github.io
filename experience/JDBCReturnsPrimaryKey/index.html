@@ -123,25 +123,25 @@
 
 
 
-  <meta name="description" content="在跟老师使用Spring做项目过程中，遇到的一些问题，一些纯Java中不能理解的问题，摸索了一晚上后，发现跟注解息息相关，博主水平有限，刚学Spring不久，不能很好的解释其中的道理，只是分享一些，可能知其然，但不知其所以然的东西，仅供临时救急。  比如说： 调用接口即可实现实现类的功能Test类 1234567891011121314151617181920@Resource    pri">
-<meta name="keywords" content="Spring">
+  <meta name="description" content="相同情况的文章  版本说明： MySQL： 8.0.15 Java JDK： 11 mysql-connector-java： 8.0.15 需求　　插入数据库后返回主键ID 网上教程代码123456789101112131415161718192021222324//（代码经过敏感处理）    Class.forName(&quot;com.mysql.cj.jdbc.Driver&quot;);    Conn">
+<meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【Spring】Spring初体验心得——注解">
-<meta property="og:url" content="https://NipGeihou.com/Java/Spring_1/index.html">
+<meta property="og:title" content="【Java】MySQL8 JDBC executeUpdate后取主键经验之谈">
+<meta property="og:url" content="https://NipGeihou.com/experience/JDBCReturnsPrimaryKey/index.html">
 <meta property="og:site_name" content="NipGeihou Blog">
-<meta property="og:description" content="在跟老师使用Spring做项目过程中，遇到的一些问题，一些纯Java中不能理解的问题，摸索了一晚上后，发现跟注解息息相关，博主水平有限，刚学Spring不久，不能很好的解释其中的道理，只是分享一些，可能知其然，但不知其所以然的东西，仅供临时救急。  比如说： 调用接口即可实现实现类的功能Test类 1234567891011121314151617181920@Resource    pri">
+<meta property="og:description" content="相同情况的文章  版本说明： MySQL： 8.0.15 Java JDK： 11 mysql-connector-java： 8.0.15 需求　　插入数据库后返回主键ID 网上教程代码123456789101112131415161718192021222324//（代码经过敏感处理）    Class.forName(&quot;com.mysql.cj.jdbc.Driver&quot;);    Conn">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-24T16:28:32.890Z">
+<meta property="og:updated_time" content="2019-03-25T13:55:30.193Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【Spring】Spring初体验心得——注解">
-<meta name="twitter:description" content="在跟老师使用Spring做项目过程中，遇到的一些问题，一些纯Java中不能理解的问题，摸索了一晚上后，发现跟注解息息相关，博主水平有限，刚学Spring不久，不能很好的解释其中的道理，只是分享一些，可能知其然，但不知其所以然的东西，仅供临时救急。  比如说： 调用接口即可实现实现类的功能Test类 1234567891011121314151617181920@Resource    pri">
+<meta name="twitter:title" content="【Java】MySQL8 JDBC executeUpdate后取主键经验之谈">
+<meta name="twitter:description" content="相同情况的文章  版本说明： MySQL： 8.0.15 Java JDK： 11 mysql-connector-java： 8.0.15 需求　　插入数据库后返回主键ID 网上教程代码123456789101112131415161718192021222324//（代码经过敏感处理）    Class.forName(&quot;com.mysql.cj.jdbc.Driver&quot;);    Conn">
 
 
 
 
 
 
-  <link rel="canonical" href="https://NipGeihou.com/Java/Spring_1/"/>
+  <link rel="canonical" href="https://NipGeihou.com/experience/JDBCReturnsPrimaryKey/"/>
 
 
 
@@ -151,7 +151,7 @@
   };
 </script>
 
-  <title>【Spring】Spring初体验心得——注解 | NipGeihou Blog</title>
+  <title>【Java】MySQL8 JDBC executeUpdate后取主键经验之谈 | NipGeihou Blog</title>
   
 
 
@@ -399,7 +399,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://NipGeihou.com/Java/Spring_1/">
+    <link itemprop="mainEntityOfPage" href="https://NipGeihou.com/experience/JDBCReturnsPrimaryKey/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="NipGeihou">
@@ -416,7 +416,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【Spring】Spring初体验心得——注解
+          <h1 class="post-title" itemprop="name headline">【Java】MySQL8 JDBC executeUpdate后取主键经验之谈
               
             
           </h1>
@@ -442,24 +442,12 @@
                 
               
 
-              <time title="创建时间：2019-03-24 23:50:50" itemprop="dateCreated datePublished" datetime="2019-03-24T23:50:50+08:00">2019-03-24</time>
+              <time title="创建时间：2019-03-25 21:17:17 / 修改时间：21:55:30" itemprop="dateCreated datePublished" datetime="2019-03-25T21:17:17+08:00">2019-03-25</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-03-25 00:28:32" itemprop="dateModified" datetime="2019-03-25T00:28:32+08:00">2019-03-25</time>
               
             
           </span>
@@ -473,8 +461,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/Java/Spring_1/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/Java/Spring_1/" itemprop="commentCount"></span>
+                <a href="/experience/JDBCReturnsPrimaryKey/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/experience/JDBCReturnsPrimaryKey/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -498,7 +486,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.8k</span>
+                <span title="本文字数">1.2k</span>
               
 
               
@@ -512,7 +500,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">5 分钟</span>
+                <span title="阅读时长">2 分钟</span>
               
             </div>
           
@@ -533,18 +521,18 @@
 
       
         <blockquote>
-<p>　　在跟老师使用Spring做项目过程中，遇到的一些问题，一些纯Java中不能理解的问题，摸索了一晚上后，发现跟注解息息相关，博主水平有限，刚学Spring不久，不能很好的解释其中的道理，只是分享一些，可能知其然，但不知其所以然的东西，仅供临时救急。</p>
+<p>相同情况的<a href="https://codeday.me/bug/20181223/455732.html" target="_blank" rel="noopener">文章</a></p>
 </blockquote>
-<p><strong>比如说：</strong></p>
-<h2 id="调用接口即可实现实现类的功能"><a href="#调用接口即可实现实现类的功能" class="headerlink" title="调用接口即可实现实现类的功能"></a>调用接口即可实现实现类的功能</h2><p>Test类</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Resource</span></span><br><span class="line">    <span class="keyword">private</span> AyRecordService ayRecordService;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        AyRecord ayRecord = <span class="keyword">new</span> AyRecord();</span><br><span class="line">        ayRecord.setId(<span class="number">1</span>);</span><br><span class="line">        ayRecord.setAyUserId(<span class="number">1</span>);</span><br><span class="line">        ayRecord.setScore(<span class="number">500</span>);</span><br><span class="line">        ayRecord.setCreateTime(<span class="keyword">new</span> Date());</span><br><span class="line"></span><br><span class="line">        AyRecord result = ayRecordService.add(ayRecord);<span class="comment">//这一行代码</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (result != <span class="keyword">null</span>) &#123;</span><br><span class="line">            System.out.println(<span class="string">"游戏记录新建成功"</span>);</span><br><span class="line">            System.out.println(result);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">"游戏记录新建失败"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>AyRecordServicel类：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.nipgeihou.game2048.service;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.nipgeihou.game2048.domain.AyRecord;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">AyRecordService</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 新增游戏记录，如果分数大于以前的记录，则更新最高分</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> ayRecord</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> AyRecord <span class="title">add</span><span class="params">(AyRecord ayRecord)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>AyRecordServiceImpl类：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.nipgeihou.game2048.service.impl;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.nipgeihou.game2048.domain.AyRecord;</span><br><span class="line"><span class="keyword">import</span> com.nipgeihou.game2048.domain.AyUser;</span><br><span class="line"><span class="keyword">import</span> com.nipgeihou.game2048.repository.AyRecordRepository;</span><br><span class="line"><span class="keyword">import</span> com.nipgeihou.game2048.repository.AyUserRepository;</span><br><span class="line"><span class="keyword">import</span> com.nipgeihou.game2048.service.AyRecordService;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Service;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.annotation.Resource;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Service</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AyRecordServiceImpl</span> <span class="keyword">implements</span> <span class="title">AyRecordService</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Resource</span></span><br><span class="line">    <span class="keyword">private</span> AyUserRepository ayUserRepository;</span><br><span class="line">    <span class="meta">@Resource</span></span><br><span class="line">    <span class="keyword">private</span> AyRecordRepository ayRecordRepository;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> AyRecord <span class="title">add</span><span class="params">(AyRecord ayRecord)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        AyRecord result = ayRecordRepository.save(ayRecord);</span><br><span class="line"></span><br><span class="line">        AyUser ayUser = ayUserRepository.getOne(ayRecord.getAyUserId());</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (ayRecord.getScore()&gt;ayUser.getMaxScore())&#123;</span><br><span class="line">            ayUser.setMaxScore(ayRecord.getScore());</span><br><span class="line">            ayUserRepository.save(ayUser);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>　　在纯粹的JAVA代码中，我不能理解为什么使用<code>ayRecordService.add(ayRecord)</code>可以实现添加数据库，而不是<code>ayRecordServiceImpl.add(ayRecord)</code></p>
-<p>　　捣腾了一晚，得知在接口的实现类前添加<code>@Service</code>，即可调用接口方法也能实现实现类功能。</p>
-<h2 id="junit4-Test类前需添加-RunWith-SpringRunner-class-SpringBootTest"><a href="#junit4-Test类前需添加-RunWith-SpringRunner-class-SpringBootTest" class="headerlink" title="junit4 Test类前需添加@RunWith(SpringRunner.class) @SpringBootTest"></a>junit4 Test类前需添加@RunWith(SpringRunner.class) @SpringBootTest</h2><p>　　直接通过右键Service接口创建的junit4 Test方法默认没有添加这两个注解，如果不添加这两个注解就会报错<code>java.lang.NullPointerException</code></p>
-<h2 id="JDBC-MySQL8注意事项及application-properties配置"><a href="#JDBC-MySQL8注意事项及application-properties配置" class="headerlink" title="JDBC MySQL8注意事项及application.properties配置"></a>JDBC MySQL8注意事项及application.properties配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#连接地址</span><br><span class="line">spring.datasource.url=jdbc:mysql://127.0.0.1:3306/test?useSSL=false&amp;serverTimezone=UTC</span><br><span class="line">#数据库账户</span><br><span class="line">spring.datasource.username=root</span><br><span class="line">#数据库密码</span><br><span class="line">spring.datasource.password=</span><br><span class="line">#数据库驱动</span><br><span class="line">spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver</span><br></pre></td></tr></table></figure>
-<p>MySQL 8 需要注意的是与MySQL 5不同，驱动改为了<code>com.mysql.cj.jdbc.Driver</code>，连接地址后面需要添加<code>useSSL=false&amp;serverTimezone=UTC</code>，否则报错</p>
+<p>版本说明：</p>
+<p><strong>MySQL：</strong> 8.0.15</p>
+<p><strong>Java JDK：</strong> 11</p>
+<p><strong>mysql-connector-java：</strong> 8.0.15</p>
+<h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><p>　　插入数据库后返回主键ID</p>
+<h2 id="网上教程代码"><a href="#网上教程代码" class="headerlink" title="网上教程代码"></a>网上教程代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//（代码经过敏感处理）</span></span><br><span class="line">    Class.forName(<span class="string">"com.mysql.cj.jdbc.Driver"</span>);</span><br><span class="line">    Connection conn = DriverManager.getConnection(</span><br><span class="line">            <span class="string">"jdbc:mysql://127.0.0.1:3306/xxxxxx?useSSL=false&amp;serverTimezone=UTC"</span>, <span class="string">"****"</span>, <span class="string">"***"</span>);</span><br><span class="line">    </span><br><span class="line">    String sql = <span class="string">"INSERT INTO openorders (a,b,c,d)	VALUES	(?, ?, ?, ?)"</span>;</span><br><span class="line">    PreparedStatement preparedStatement = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);</span><br><span class="line">    </span><br><span class="line">    preparedStatement.setString(<span class="number">1</span>, a);</span><br><span class="line">    preparedStatement.setDouble(<span class="number">2</span>, b);</span><br><span class="line">    preparedStatement.setDouble(<span class="number">3</span>, c);</span><br><span class="line">    preparedStatement.setDouble(<span class="number">4</span>, d);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//返回生成的id</span></span><br><span class="line">    preparedStatement.executeUpdate();</span><br><span class="line">    ResultSet generatedKeys = preparedStatement.getGeneratedKeys();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (generatedKeys.next()) &#123;</span><br><span class="line">        System.out.println(generatedKeys.getInt(<span class="string">"id"</span>));<span class="comment">//关键</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    generatedKeys.close();</span><br><span class="line">    preparedStatement.close();</span><br><span class="line">    conn.close();</span><br></pre></td></tr></table></figure>
+<h2 id="输出结果"><a href="#输出结果" class="headerlink" title="输出结果"></a>输出结果</h2><p>　　然而，在我的运行环境下，会报错提示<code>Column &#39;id&#39; not found.</code></p>
+<p>　　在一顿摸索后，发现<code>generatedKeys</code>返回的字段名为<code>GENERATED_KEY</code>，而不是<code>id</code>，因此使用</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">generatedKeys.getInt(<span class="string">"GENERATED_KEY"</span>);</span><br><span class="line">generatedKeys.getInt(<span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+<p>　　是可以返回主键的，具体原因暂时未知，未知是否与高版本的MySQL、JDK有关，但有多年前的文章也提到这个问题。</p>
 
       
     </div>
@@ -578,7 +566,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://NipGeihou.com/Java/Spring_1/" title="【Spring】Spring初体验心得——注解">https://NipGeihou.com/Java/Spring_1/</a>
+    <a href="https://NipGeihou.com/experience/JDBCReturnsPrimaryKey/" title="【Java】MySQL8 JDBC executeUpdate后取主键经验之谈">https://NipGeihou.com/experience/JDBCReturnsPrimaryKey/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -591,7 +579,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Spring/" rel="tag"><i class="fa fa-tag"></i> Spring</a>
+            <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
           
         </div>
       
@@ -604,8 +592,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/School/gzccc-amnoon2019/" rel="next" title="【广州城建职业学院】网管网络维修流程">
-                <i class="fa fa-chevron-left"></i> 【广州城建职业学院】网管网络维修流程
+              <a href="/Java/Spring_1/" rel="next" title="【Spring】Spring初体验心得——注解">
+                <i class="fa fa-chevron-left"></i> 【Spring】Spring初体验心得——注解
               </a>
             
           </div>
@@ -613,10 +601,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/experience/JDBCReturnsPrimaryKey/" rel="prev" title="【Java】MySQL8 JDBC executeUpdate后取主键经验之谈">
-                【Java】MySQL8 JDBC executeUpdate后取主键经验之谈 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -954,7 +938,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#调用接口即可实现实现类的功能"><span class="nav-number">1.</span> <span class="nav-text">调用接口即可实现实现类的功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#junit4-Test类前需添加-RunWith-SpringRunner-class-SpringBootTest"><span class="nav-number">2.</span> <span class="nav-text">junit4 Test类前需添加@RunWith(SpringRunner.class) @SpringBootTest</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JDBC-MySQL8注意事项及application-properties配置"><span class="nav-number">3.</span> <span class="nav-text">JDBC MySQL8注意事项及application.properties配置</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#需求"><span class="nav-number">1.</span> <span class="nav-text">需求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网上教程代码"><span class="nav-number">2.</span> <span class="nav-text">网上教程代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#输出结果"><span class="nav-number">3.</span> <span class="nav-text">输出结果</span></a></li></ol></div>
             
 
           </div>
