@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://NipGeihou.com/Regex/</loc>
+    
+    <lastmod>2019-03-31T18:09:48.729Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://NipGeihou.com/School/gzccc-amnoon/</loc>
     
     <lastmod>2019-03-28T14:57:31.708Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>https://NipGeihou.com/Java/JavaJdkDifficulties/</loc>
     
     <lastmod>2019-03-24T15:48:40.259Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://NipGeihou.com/Regex/</loc>
-    
-    <lastmod>2019-03-10T05:35:51.739Z</lastmod>
     
   </url>
   
