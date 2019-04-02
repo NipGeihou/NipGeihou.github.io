@@ -86,13 +86,6 @@
   </url>
   
   <url>
-    <loc>https://NipGeihou.com/Hexo/hexo_staticpage/</loc>
-    
-    <lastmod>2019-03-07T18:02:30.979Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://NipGeihou.com/Hexo/hexo_deploy/</loc>
     
     <lastmod>2019-03-07T18:02:30.979Z</lastmod>
@@ -101,6 +94,13 @@
   
   <url>
     <loc>https://NipGeihou.com/Hexo/hexo-next/</loc>
+    
+    <lastmod>2019-03-07T18:02:30.979Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://NipGeihou.com/Hexo/hexo_staticpage/</loc>
     
     <lastmod>2019-03-07T18:02:30.979Z</lastmod>
     
