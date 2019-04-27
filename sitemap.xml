@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://NipGeihou.com/experience/SinaPhoto/</loc>
+    
+    <lastmod>2019-04-27T17:58:26.570Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://NipGeihou.com/experience/echartsAsynchronous/</loc>
     
     <lastmod>2019-04-27T17:25:46.642Z</lastmod>
@@ -93,13 +100,6 @@
   </url>
   
   <url>
-    <loc>https://NipGeihou.com/Hexo/hexo_deploy/</loc>
-    
-    <lastmod>2019-03-07T18:02:30.979Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://NipGeihou.com/Hexo/hexo_staticpage/</loc>
     
     <lastmod>2019-03-07T18:02:30.979Z</lastmod>
@@ -108,6 +108,13 @@
   
   <url>
     <loc>https://NipGeihou.com/Hexo/hexo_uml/</loc>
+    
+    <lastmod>2019-03-07T18:02:30.979Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://NipGeihou.com/Hexo/hexo_deploy/</loc>
     
     <lastmod>2019-03-07T18:02:30.979Z</lastmod>
     
