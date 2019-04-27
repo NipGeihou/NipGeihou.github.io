@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[【Hexo】新浪图床防盗链导致博客图片无法显示的临时解决办法]]></title>
     <url>%2Fexperience%2FSinaPhoto%2F</url>
-    <content type="text"><![CDATA[刚刚写了一篇文章，hexo s预览时发现图片不显示，可在VScode预览时，是可以正常显示的，检查后发现图片响应状态403，但复制图片链接到浏览器打开（不是在新标签中打开图片），图片是可以正常响应、显示的，后在v2ex发现，不止我一个，看来新浪是开启了防盗链了，在翻查回答中，发现了@trepwq等老哥发的解决办法：微博图床禁止外链的临时解决办法 - willnet，测试后，确定是可用的，那么在Hexo中要如何配置呢？ \themes\next\layout目录下的_layout.swig，在&lt;head&gt;元素中添加 1&lt;meta name="referrer" content="no-referrer" /&gt; 保存、编译、部署即可，当然这仅仅是一个临时办法，可能会导致第三方统计不准，还是建议大家尽快更换图床]]></content>
+    <content type="text"><![CDATA[刚刚写了一篇文章，hexo s预览时发现图片不显示，可在VScode预览时，是可以正常显示的，检查后发现图片响应状态403，但复制图片链接到浏览器打开（不是在新标签中打开图片），图片是可以正常响应、显示的，后在v2ex发现，不止我一个，看来新浪是开启防盗链了，在翻查回答中，发现了@trepwq等老哥发的解决办法：微博图床禁止外链的临时解决办法 - willnet，测试后，确定是可用的，那么在Hexo中要如何配置呢？ \themes\next\layout（next为你的主题名）目录下的_layout.swig，在&lt;head&gt;元素中添加： 1&lt;meta name="referrer" content="no-referrer" /&gt; 保存、编译、部署即可，当然这仅仅是一个临时办法，可能会导致第三方统计不准，还是建议大家尽快更换图床]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
