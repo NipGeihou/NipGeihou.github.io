@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[【Windows】Powershell执行ssh-add 报错:Error connecting to agent:No such file or directory]]></title>
     <url>%2Fexperience%2Fwindows-ssh-agent%2F</url>
-    <content type="text"><![CDATA[今天尝试用Powershell生成ssh key时，在使用·ssh-add命令添加私钥时，多次确认文件、路径没有问题，却依旧提示Error connecting to agent: No such file or directory，后来Google得知，是OpenSSH Authentication Agent`服务未开启，开启后即可。 参考资料：Starting ssh-agent on Windows 10 fails: “unable to start ssh-agent service, error :1058” - Stack Overflow]]></content>
+    <content type="text"><![CDATA[今天尝试用Powershell生成ssh key时，在使用ssh-add命令添加私钥时，多次确认文件、路径没有问题，却依旧提示Error connecting to agent: No such file or directory，后来Google得知，是OpenSSH Authentication Agent服务未开启，开启后即可。 参考资料：Starting ssh-agent on Windows 10 fails: “unable to start ssh-agent service, error :1058” - Stack Overflow]]></content>
       <categories>
         <category>Windows</category>
       </categories>
