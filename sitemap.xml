@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://NipGeihou.com/experience/the-system_user-dynamic-privilege/</loc>
+    
+    <lastmod>2019-05-25T12:14:42.454Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://NipGeihou.com/experience/windows-ssh-agent/</loc>
     
     <lastmod>2019-05-22T16:39:20.804Z</lastmod>
@@ -114,13 +121,6 @@
   </url>
   
   <url>
-    <loc>https://NipGeihou.com/Hexo/hexo-next/</loc>
-    
-    <lastmod>2019-03-07T18:02:30.979Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://NipGeihou.com/Hexo/hexo_deploy/</loc>
     
     <lastmod>2019-03-07T18:02:30.979Z</lastmod>
@@ -128,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://NipGeihou.com/Hexo/hexo_staticpage/</loc>
+    <loc>https://NipGeihou.com/Hexo/hexo-next/</loc>
     
     <lastmod>2019-03-07T18:02:30.979Z</lastmod>
     
@@ -136,6 +136,13 @@
   
   <url>
     <loc>https://NipGeihou.com/Hexo/hexo_uml/</loc>
+    
+    <lastmod>2019-03-07T18:02:30.979Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://NipGeihou.com/Hexo/hexo_staticpage/</loc>
     
     <lastmod>2019-03-07T18:02:30.979Z</lastmod>
     
