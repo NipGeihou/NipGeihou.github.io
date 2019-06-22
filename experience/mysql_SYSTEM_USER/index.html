@@ -131,7 +131,7 @@
 <meta property="og:site_name" content="NipGeihou Blog">
 <meta property="og:description" content="在Linux 7下的MySQL 8.0.16中遇到这个问题： 创建新用户并赋予所有权限： 1grant all privileges on *.* to &apos;NipGeihou&apos;@&apos;%&apos; with grant option; 随后撤销所有授权时，出现了报错：12mysql&amp;gt; revoke all on *.* from NipGeihou;ERROR 1227 (42000): Access">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-25T13:14:07.021Z">
+<meta property="og:updated_time" content="2019-05-25T15:27:05.183Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【MySQL】撤销所有授权(revoke all)报错：Access denied; you need (at least one of) the SYSTEM_USER privilege(s) for this operation">
 <meta name="twitter:description" content="在Linux 7下的MySQL 8.0.16中遇到这个问题： 创建新用户并赋予所有权限： 1grant all privileges on *.* to &apos;NipGeihou&apos;@&apos;%&apos; with grant option; 随后撤销所有授权时，出现了报错：12mysql&amp;gt; revoke all on *.* from NipGeihou;ERROR 1227 (42000): Access">
@@ -443,7 +443,7 @@
                 
               
 
-              <time title="创建时间：2019-05-25 20:52:54 / 修改时间：21:14:07" itemprop="dateCreated datePublished" datetime="2019-05-25T20:52:54+08:00">2019-05-25</time>
+              <time title="创建时间：2019-05-25 20:52:54 / 修改时间：23:27:05" itemprop="dateCreated datePublished" datetime="2019-05-25T20:52:54+08:00">2019-05-25</time>
             
 
             
@@ -487,7 +487,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">992</span>
+                <span title="本文字数">986</span>
               
 
               
@@ -520,7 +520,6 @@
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">revoke</span> all <span class="keyword">privileges</span> <span class="keyword">on</span> *.* <span class="keyword">from</span> NipGeihou;</span><br></pre></td></tr></table></figure>
 <p>方法二：先在需要撤销的用户会话下，赋予root账户SYSTEM_USER权限，再回到root用户下撤销</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># NipGeihou用户会话</span><br><span class="line"></span><br><span class="line">mysql&gt; grant system_user on *.* to root;</span><br><span class="line">Query OK, 0 rows affected (0.01 sec)</span><br><span class="line"></span><br><span class="line"># root用户会话</span><br><span class="line"></span><br><span class="line">mysql&gt; revoke all privileges on *.* from NipGeihou;</span><br><span class="line">Query OK, 0 rows affected (0.00 sec)</span><br></pre></td></tr></table></figure>
-<p><strong>翻译原文</strong>：</p>
 <p><strong>参考文章</strong>：</p>
 <ul>
 <li><a href="https://dev.mysql.com/doc/refman/8.0/en/privileges-provided.html" target="_blank" rel="noopener">MySQL :: MySQL 8.0 Reference Manual :: 6.2.2 Privileges Provided by MySQL </a></li>
@@ -851,7 +850,7 @@
                     
                       
                     
-                    <span class="site-state-item-count">63</span>
+                    <span class="site-state-item-count">59</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -972,7 +971,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">64k</span>
+    <span title="站点总字数">65k</span>
   
 
   
@@ -983,7 +982,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">1:57</span>
+    <span title="站点阅读时长">1:59</span>
   
 </div>
 
