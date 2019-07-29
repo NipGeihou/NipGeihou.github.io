@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[【ThinkPHP 5】解决ThinkPHP5与Xdebug dump命令冲突]]></title>
+    <url>%2Fexperience%2FxdebugAndTP5DumpConflict%2F</url>
+    <content type="text"><![CDATA[在安装了Xdebug后发现，原本ThinkPHPdump命令输出样式发生了改变，变成了： 12345678910111213141516171819202122232425E:\xxxx\xxxx\thinkphp\library\think\Debug.php:226:object(app\common\paginator\Zui)[41] protected 'simple' =&gt; boolean false protected 'items' =&gt; object(think\model\Collection)[42] protected 'items' =&gt; array (size=1) 0 =&gt; object(app\xxxxx\model\Order)[44] ... protected 'currentPage' =&gt; int 1 protected 'lastPage' =&gt; int 1 protected 'total' =&gt; int 1 protected 'listRows' =&gt; int 20 protected 'hasMore' =&gt; boolean false protected 'options' =&gt; array (size=6) 'var_page' =&gt; string 'page' (length=4) 'path' =&gt; string '/xxxxx/xxxxxx/xxxxxx.html' (length=34) 'query' =&gt; array (size=0) empty 'fragment' =&gt; string '' (length=0) 'type' =&gt; string '\app\common\paginator\Zui' (length=25) 'list_rows' =&gt; int 20 虽然有些不习惯，但也不觉得有太大影响，就没管，后来要dump一个模型对象（即上面的），它把查询结果集给省略了，这就不好玩了，上网查阅得知，在php.ini文件添加一行即可用回ThinkPHP原本的dump： 123456[XDebug]xdebug.profiler_append = 0xdebug.profiler_enable = 1xdebug.profiler_enable_trigger = 0...xdebug.overload_var_dump = 0 ;添加这一行 Reboot the Nginx or Apache]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+        <tag>ThinkPHP</tag>
+        <tag>TP5</tag>
+        <tag>Xdebug</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[【经验分享】快速使用typeahead]]></title>
+    <url>%2Fexperience%2Ftypeahead_quick_use%2F</url>
+    <content type="text"><![CDATA[效果图 实现功能： 在input输入框输入字符串时，通过typeahead异步请求服务器接口，返回json数据，呈现类始于下拉框的样子，选择后自动补全相关输入框，提升用户体验。 准备 jquery.js - 不解释，可能不需要，typeahead.bundle.js 内置jQuery handlebars.js - 用于结果（下拉框）显示样式 typeahead.bundle.js 开始导入js库在需要用到typeahead的html页面，依次导入jquery.js、handlebars.js、typeahead.js，顺序错误会导致无法调用jQuery 123&lt;script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"&gt;&lt;/script&gt;&lt;script src="https://cdn.bootcss.com/handlebars.js/4.1.2/handlebars.js"&gt;&lt;/script&gt;&lt;script src="https://cdn.bootcss.com/typeahead.js/0.11.1/typeahead.bundle.js"&gt;&lt;/script&gt; 待编辑]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>typeahead</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[【MySQL】撤销所有授权(revoke all)报错：Access denied; you need (at least one of) the SYSTEM_USER privilege(s) for this operation]]></title>
     <url>%2Fexperience%2Fmysql_SYSTEM_USER%2F</url>
     <content type="text"><![CDATA[在Linux 7下的MySQL 8.0.16中遇到这个问题： 创建新用户并赋予所有权限： 1grant all privileges on *.* to 'NipGeihou'@'%' with grant option; 随后撤销所有授权时，出现了报错：12mysql&gt; revoke all on *.* from NipGeihou;ERROR 1227 (42000): Access denied; you need (at least one of) the SYSTEM_USER privilege(s) for this operation 在搜素资料后得知：这是MySQL 8.0.16的一个新权限SYSTEM_USER，奇怪的是root账号竟可以授予其他用户SYSTEM_USER权限，而本身却没有SYSTEM_USER权限，知道了原因后就好办了： 方法一： 直接在需要撤销的用户会话下 1revoke all privileges on *.* from NipGeihou; 方法二：先在需要撤销的用户会话下，赋予root账户SYSTEM_USER权限，再回到root用户下撤销 123456789# NipGeihou用户会话mysql&gt; grant system_user on *.* to root;Query OK, 0 rows affected (0.01 sec)# root用户会话mysql&gt; revoke all privileges on *.* from NipGeihou;Query OK, 0 rows affected (0.00 sec) 参考文章： MySQL :: MySQL 8.0 Reference Manual :: 6.2.2 Privileges Provided by MySQL MySQL :: MySQL 8.0 Reference Manual :: 6.2.11 Account Categories The SYSTEM_USER Dynamic Privilege | MySQL Server Blog The SYSTEM_USER Dynamic Privilege |MySQL 8.0.16新特性：SYSTEM_USER动态权限（英译中文）]]></content>
